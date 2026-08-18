@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Air Cool System | AC, Fridge & TV Repair Nallasopara Vasai</title>
+<meta name="description" content="Expert AC, Fridge, Washing Machine & TV repair in Nallasopara, Vasai & Virar. Same-day appliance service at best rates">
+<meta name="keywords" content="AC repair Nallasopara, fridge repair Vasai, washing machine repair Virar, TV repair service, appliance technician, Air Cool System">
+<link rel="icon" type="image/jpeg" href="images/favicon.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===== Top utility bar ===== -->
+<div class="topbar">
+  <div class="container topbar__inner">
+    <p class="topbar__msg"><span class="dot"></span> 24/7 Emergency Service Available — Nallasopara East &amp; Vasai</p>
+    <div class="topbar__links">
+      <a href="tel:+919527868342">📞 +91 95278 68342</a>
+      <a href="https://wa.me/919527868342" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </div>
+</div>
+
+<!-- ===== Header / Nav ===== -->
+<header class="header" id="top">
+  <div class="container header__inner">
+    <a href="#top" class="brand">
+      <img src="images/logo.jpg" alt="Air Cool System logo" width="44" height="44">
+      <span class="brand__text">
+        <strong>Air Cool System</strong>
+        <small>Cooling &amp; Appliance Care</small>
+      </span>
+    </a>
+
+    <nav class="nav" id="mainNav">
+      <a href="#top">Home</a>
+      <a href="#booking">Book Now</a>
+      <a href="#services">Services</a>
+      <a href="#why-us">Why Us</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="header__cta">
+      <a href="tel:+919527868342" class="btn btn--ghost">Call Now</a>
+      <a href="#booking" class="btn btn--primary">Book a Repair</a>
+    </div>
+
+    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ===== Hero (headline first, no image — image moves below the booking form) ===== -->
+  <section class="hero">
+    <div class="hero__waves" aria-hidden="true"></div>
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <span class="eyebrow">Nallasopara East &amp; Vasai's Local Repair Experts</span>
+        <h1>Fast, Honest Repairs for Every&nbsp;<span class="text-accent">Home Appliance</span></h1>
+        <p class="hero__tagline">Your Comfort, Our Responsibility | Thandi Hawa, Behtar Zindagi!</p>
+        <p class="hero__desc">From AC gas filling to fridge cooling issues, washing machine breakdowns to TV panel faults — our trained technicians reach your doorstep with genuine parts and transparent pricing.</p>
+
+        <div class="hero__actions">
+          <a href="#booking" class="btn btn--accent btn--lg">Book a Technician</a>
+          <a href="tel:+919527868342" class="btn btn--outline btn--lg">📞 Call +91 95278 68342</a>
+        </div>
+
+        <ul class="hero__badges">
+          <li>✔ 100% Satisfaction</li>
+          <li>✔ Same-Day Service</li>
+          <li>✔ Genuine Parts</li>
+          <li>✔ 24/7 Emergency</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Quick Booking Form (immediately after the headline) ===== -->
+  <style>
+  .booking { background: linear-gradient(135deg, #0b2c5c 0%, #1e56a0 100%); padding: 50px 20px; border-radius: 16px; color: #fff; max-width: 600px; margin: 30px auto; box-shadow: 0 15px 35px rgba(0,0,0,0.3); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  .booking__header { text-align: center; margin-bottom: 25px; }
+  .booking__badge { display: inline-block; background: linear-gradient(135deg, #ff6600, #e65100); color: #fff; padding: 6px 16px; border-radius: 50px; font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 12px; box-shadow: 0 4px 10px rgba(255,102,0,0.3); }
+  .booking__header h2 { font-size: 1.8rem; margin: 0 0 8px 0; font-weight: 800; color: #fff; letter-spacing: -0.5px; }
+  .booking__header p { font-size: 0.95rem; opacity: 0.95; margin: 0; color: #e2e8f0; }
+  
+  /* Clean White Form Container for High Visibility */
+  .booking__form { background: #ffffff; padding: 30px; border-radius: 12px; display: flex; flex-direction: column; gap: 16px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+  
+  .form-group { display: flex; flex-direction: column; gap: 6px; }
+  .form-group label { font-size: 0.85rem; font-weight: 700; color: #1e293b; }
+  .form-group input, .form-group select { width: 100%; padding: 14px 16px; border-radius: 8px; border: 1px solid #cbd5e1; background: #f8fafc; color: #0f172a; font-size: 1rem; outline: none; box-sizing: border-box; transition: all 0.3s ease; }
+  .form-group input:focus, .form-group select:focus { border-color: #1e56a0; background: #ffffff; box-shadow: 0 0 0 3px rgba(30,86,160,0.15); }
+  .form-group input::placeholder { color: #94a3b8; }
+  .form-group select option { background: #ffffff; color: #0f172a; }
+  
+  .booking-btn { width: 100%; padding: 16px; background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); color: #fff; border: none; border-radius: 8px; font-size: 1.05rem; font-weight: 800; text-transform: uppercase; cursor: pointer; box-shadow: 0 6px 20px rgba(245,158,11,0.4); transition: transform 0.2s ease, box-shadow 0.2s ease; margin-top: 5px; }
+  .booking-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 25px rgba(245,158,11,0.6); }
+  .booking-footer { text-align: center; font-size: 0.8rem; color: #64748b; margin-top: 12px; font-weight: 500; }
+</style>
+
+<section class="booking" id="booking">
+  <div class="booking__header">
+    <div class="booking__badge">🔥 First Booking pe ₹100 Off 🔥</div>
+    <h2>Air Cool System</h2>
+    <p>Expert AC, Fridge & Washing Machine Repair in Vasai, Nallasopara & Virar</p>
+  </div>
+
+  <form class="booking__form" id="bookingForm" action="https://api.web3forms.com/submit" method="POST">
+    <input type="hidden" name="access_key" value="550592e8-faef-4d97-80e8-bf71314783fc">
+    <input type="hidden" name="redirect" value="thankyou.html">
+
+    <div class="form-group">
+      <label for="name">Full Name *</label>
+      <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+    </div>
+
+    <div class="form-group">
+      <label for="phone">Phone Number *</label>
+      <input type="tel" id="phone" name="phone" placeholder="10-digit mobile number" pattern="[0-9]{10}" required>
+    </div>
+
+    <div class="form-group">
+      <label for="service">Select Service *</label>
+      <select id="service" name="service" required>
+        <option value="" disabled selected>-- Select Appliance Service --</option>
+        <option value="AC Service">AC Service</option>
+        <option value="AC Repair">AC Repair</option>
+        <option value="AC Installation">AC Installation</option>
+        <option value="AC Uninstallation">AC Uninstallation</option>
+        <option value="Inverter AC Repair & Service">Inverter AC Repair & Service</option>
+        <option value="Split AC Jet Cleaning">Split AC Jet Cleaning</option>
+        <option value="Window AC Repair/Service">Window AC Repair/Service</option>
+        <option value="AC Gas Charging">AC Gas Charging</option>
+		<option value="New Flat AC Copper Piping">New Flat AC Copper Piping</option>
+        <option value="AC Concealed Piping (In-Wall)">AC Concealed Piping (In-Wall)</option>
+        <option value="AC Copper Piping / Leakage Fix">AC Copper Piping / Leakage Fix</option>
+		<option value="Front Load Washing Machine Repair">Front Load Washing Machine Repair</option>
+        <option value="Top Load Washing Machine Repair">Top Load Washing Machine Repair</option>
+        <option value="Washing Machine Drum & Spin Issue Repair">Washing Machine Drum & Spin Issue Repair</option>
+        <option value="Washing Machine Water Leakage Fix">Washing Machine Water Leakage Fix</option>
+        <option value="Washing Machine PCB & Motor Repair">Washing Machine PCB & Motor Repair</option>
+		<option value="LED TV Repair & Service">LED TV Repair & Service</option>
+        <option value="Smart TV Repair & Installation">Smart TV Repair & Installation</option>
+        <option value="TV Display Panel Repair / Replacement">TV Display Panel Repair / Replacement</option>
+        <option value="TV Backlight / Sound Problem Fix">TV Backlight / Sound Problem Fix</option>
+        <option value="LCD / Plasma TV Repair">LCD / Plasma TV Repair</option>
+		<option value="Single Door Fridge Repair">Single Door Fridge Repair</option>
+        <option value="Double Door Fridge Repair">Double Door Fridge Repair</option>
+        <option value="Side-by-Side Refrigerator Repair">Side-by-Side Refrigerator Repair</option>
+        <option value="Fridge Repair">Fridge Repair</option>
+        <option value="Fridge Gas Charging">Fridge Gas Charging</option>
+        <option value="Fridge Gas Refil">Fridge Gas Refil</option>
+      </select>
+    </div>
+
+    <button type="submit" class="booking-btn">Book Now & Claim ₹100 OFF</button>
+    <div class="booking-footer">⚡ Fast doorstep response within 30 minutes</div>
+  </form>
+</section>
+  <!-- ===== Visual band (illustration moved below the booking form, never blocks the headline) ===== -->
+  <section class="hero-visual">
+    <div class="container hero-visual__inner">
+      <img src="images/hero-illustration.jpg" alt="Illustration of an air conditioner unit blowing cool air, representing AC and appliance repair services" width="520" height="440" loading="lazy" class="hero-visual__img">
+      <div class="hero-visual__text">
+        <span class="eyebrow">Ready When You Need Us</span>
+        <h2>Fully Equipped for Same-Day Repairs</h2>
+        <p>Our technicians carry genuine parts, gauges and tools for AC, fridge, washing machine and TV jobs — so most repairs are finished in a single visit. We guarantee transparent pricing with no hidden charges, ensuring complete peace of mind before any work begins. Every service is backed by a solid workmanship warranty to guarantee long-lasting cooling and performance. Operating locally across Nallasopara, Vasai, and Virar, our expert team ensures rapid doorstep arrival right when you need it most.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Services ===== -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">What We Repair</span>
+        <h2>Our Repair &amp; Installation Services</h2>
+        <p>Certified technicians, genuine spare parts, and honest diagnosis for every major home appliance.</p>
+      </div>
+
+      <div class="services__grid">
+
+        <article class="service-card">
+          <div class="service-card__media">
+            <img src="images/service-ac.jpg" alt="AC repair and servicing" width="400" height="300" loading="lazy">
+          </div>
+          <div class="service-card__body">
+            <h3>AC Repair, Service &amp; Maintenance</h3>
+            <p>Split &amp; Window AC gas filling, general servicing, cooling problems, water leakage and noise issues — restored fast.</p>
+            <a href="#booking" class="service-card__link">Book This Service →</a>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <div class="service-card__media">
+            <img src="images/service-piping.jpg" alt="AC single-phase piping and installation" width="400" height="300" loading="lazy">
+          </div>
+          <div class="service-card__body">
+            <h3>AC Piping &amp; Installation</h3>
+            <p>Single phase AC installation with proper copper pipe fitting, uninstallation, and safe relocation of your unit.</p>
+            <a href="#booking" class="service-card__link">Book This Service →</a>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <div class="service-card__media">
+            <img src="images/service-fridge.jpg" alt="Refrigerator repair and servicing" width="400" height="300" loading="lazy">
+          </div>
+          <div class="service-card__body">
+            <h3>Refrigerator Repair &amp; Service</h3>
+            <p>Single &amp; double door fridge repair — cooling failures, gas leakage, compressor and thermostat problems.</p>
+            <a href="#booking" class="service-card__link">Book This Service →</a>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <div class="service-card__media">
+            <img src="images/service-washing.jpg" alt="Washing machine repair and servicing" width="400" height="300" loading="lazy">
+          </div>
+          <div class="service-card__body">
+            <h3>Washing Machine Repair &amp; Service</h3>
+            <p>Fully &amp; semi-automatic, top-load and front-load machines — motor, drum, drainage and control panel fixes.</p>
+            <a href="#booking" class="service-card__link">Book This Service →</a>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <div class="service-card__media">
+            <img src="images/service-tv.jpg" alt="TV repair and servicing" width="400" height="300" loading="lazy">
+          </div>
+          <div class="service-card__body">
+            <h3>TV Repair &amp; Service</h3>
+            <p>LED, LCD &amp; Smart TV display and panel solutions, power issues, and software troubleshooting.</p>
+            <a href="#booking" class="service-card__link">Book This Service →</a>
+          </div>
+        </article>
+
+        <article class="service-card service-card--cta">
+          <div class="service-card__body">
+            <h3>Not sure what's wrong?</h3>
+            <p>Send us a photo or describe the issue on WhatsApp — we'll guide you before we even arrive.</p>
+            <a href="https://wa.me/919527868342" target="_blank" rel="noopener" class="btn btn--accent">Chat on WhatsApp</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Why Choose Us ===== -->
+  <section class="why-us" id="why-us">
+    <div class="container">
+      <div class="section-head section-head--light">
+        <span class="eyebrow eyebrow--light">Why Choose Us</span>
+        <h2>Repairs You Can Trust</h2>
+      </div>
+
+      <div class="why-us__grid">
+        <div class="why-card">
+          <img src="images/icon-satisfaction.jpg" alt="" width="48" height="48">
+          <h3>100% Satisfaction Guaranteed</h3>
+          <p>We're not done until your appliance works right and you're happy with the result.</p>
+        </div>
+        <div class="why-card">
+          <img src="images/icon-expert.jpg" alt="" width="48" height="48">
+          <h3>Expert Technicians</h3>
+          <p>Trained, experienced professionals who diagnose the real problem — not just the symptom.</p>
+        </div>
+        <div class="why-card">
+          <img src="images/icon-price.jpg" alt="" width="48" height="48">
+          <h3>Reasonable Prices &amp; Genuine Parts</h3>
+          <p>Transparent, upfront pricing with authentic spare parts — no hidden charges, ever.</p>
+        </div>
+        <div class="why-card">
+          <img src="images/icon-emergency.jpg" alt="" width="48" height="48">
+          <h3>Same-Day &amp; 24/7 Emergency Service</h3>
+          <p>Appliance broke down at night? We're available around the clock for urgent repairs.</p>
+        </div>
+        <div class="why-card">
+          <img src="images/icon-brands.jpg" alt="" width="48" height="48">
+          <h3>All Major Brands Repaired</h3>
+          <p>From budget to premium — we service every major AC, fridge, washing machine and TV brand.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== About / Owner ===== -->
+  <section class="about" id="about">
+    <div class="container about__inner">
+      <div class="about__media">
+        <img src="images/owner-photo.jpg" alt="Portrait placeholder for Shanawaz Mohd Murtuza Shaikh, founder of Air Cool System" width="360" height="360">
+      </div>
+      <div class="about__content">
+        <span class="eyebrow">Meet the Founder</span>
+        <h2>Shanawaz Mohd Murtuza Shaikh</h2>
+        <p class="about__role">Founder &amp; Lead Technician, Air Cool System</p>
+        <p>Air Cool System was built on a simple idea: appliance repair should be fast, fair, and done right the first time. Shanawaz personally leads a team of hands-on technicians serving Nallasopara East, Vasai and the surrounding Palghar area — fixing ACs, refrigerators, washing machines and TVs with honesty and care.</p>
+        <p>Every job is treated with the same standard, whether it's a quick gas top-up or a full AC installation — because your comfort really is our responsibility.</p>
+        <div style="display: flex; gap: 12px; align-items: center; flex-wrap: wrap;">
+          <a href="https://wa.me/919527868342" target="_blank" rel="noopener" class="btn btn--primary">Message on WhatsApp</a>
+          <span onclick="document.getElementById('privacy-modal').style.display='block'" style="color: #007bff; cursor: pointer; text-decoration: underline; font-size: 14px; font-weight: 500;">Privacy Policy</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Privacy Policy Popup Box (Placed safely outside layout) -->
+  <div id="privacy-modal" style="display:none; position:fixed; z-index:9999; left:0; top:0; width:100%; height:100%; background-color:rgba(0,0,0,0.5);">
+    <div style="background:#fff; margin:15% auto; padding:20px; width:90%; max-width:450px; border-radius:8px; position:relative;">
+      <span onclick="document.getElementById('privacy-modal').style.display='none'" style="float:right; cursor:pointer; font-size:24px; font-weight:bold;">&times;</span>
+      <h3 style="margin-bottom: 10px;">Privacy Policy</h3>
+      <p style="font-size: 13px; line-height: 1.5; color: #445;">
+        Air Cool System collects your name, phone number, and service details strictly to provide appliance repair and maintenance services across Nallasopara, Vasai, and Virar. Your data is secure, never shared with third parties, and used only to manage your service appointments.
+      </p>
+    </div>
+  </div>
+
+  <!-- ===== Contact ===== -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-head section-head--light">
+        <span class="eyebrow eyebrow--light">Get In Touch</span>
+        <h2>Contact Air Cool System</h2>
+      </div>
+
+      <div class="contact__grid">
+        <div class="contact-card">
+          <h3>📍 Address</h3>
+          <p>Room No. 02, Maa Sharda Apartment,<br>
+          90 Feet Road, Pragati Nagar, Moregaon,<br>
+          Nallasopara Vasai, Vasai, Palghar,<br>
+          Maharashtra – 401209</p>
+        </div>
+        <div class="contact-card">
+          <h3>📞 Call / WhatsApp</h3>
+          <p><a href="tel:+919527868342">+91 95278 68342</a></p>
+          <a href="https://wa.me/919527868342" target="_blank" rel="noopener" class="btn btn--accent btn--sm">Chat on WhatsApp</a>
+        </div>
+        <div class="contact-card">
+          <h3>🕒 Working Hours</h3>
+          <p>Regular Service: 8:00 AM – 9:00 PM<br>
+          Emergency Calls: Open 24/7</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== Footer ===== -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__brand">
+      <a href="#top" class="brand brand--footer">
+        <img src="images/logo.jpg" alt="Air Cool System logo" width="40" height="40">
+        <span class="brand__text">
+          <strong>Air Cool System</strong>
+          <small>Cooling &amp; Appliance Care</small>
+        </span>
+      </a>
+      <p>Your Comfort, Our Responsibility | Thandi Hawa, Behtar Zindagi!</p>
+	  <p>Service Coverage Area: Nallasopara East, Nallasopara West, Virar East, Virar West, Vasai East, Vasai West, Palghar – 401209</p>
+      <p>Business Name: Air Cool System | Proprietor: Shanawaz Mohd Murtuza Shaikh</p>
+    </div>
+
+    <div class="footer__col">
+      <h4>Quick Links</h4>
+      <a href="#booking">Book Now</a>
+      <a href="#services">Services</a>
+      <a href="#why-us">Why Us</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div class="footer__col">
+      <h4>Services</h4>
+      <a href="#services">AC Repair &amp; Service</a>
+      <a href="#services">AC Piping &amp; Installation</a>
+      <a href="#services">Refrigerator Repair</a>
+      <a href="#services">Washing Machine Repair</a>
+      <a href="#services">TV Repair</a>
+    </div>
+
+    <div class="footer__col">
+      <h4>Contact</h4>
+      <a href="tel:+919527868342">+91 95278 68342</a>
+      <a href="https://wa.me/919527868342" target="_blank" rel="noopener">WhatsApp Us</a>
+      <span>Nallasopara East, Vasai, Palghar – 401209</span>
+    </div>
+  </div>
+   
+  <div class="footer__bottom">
+    <div class="container footer__bottom-inner">
+      <p>© <span id="year"></span> Air Cool System. All rights reserved.</p>
+      <p>Owned &amp; operated by Shanawaz Mohd Murtuza Shaikh</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== Floating action buttons ===== -->
+<div class="fab-group" aria-hidden="false">
+  <a href="https://wa.me/919527868342" target="_blank" rel="noopener" class="fab fab--whatsapp" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 32 32" width="26" height="26"><path fill="#fff" d="M16 3C9 3 3.3 8.7 3.3 15.7c0 2.5.7 4.8 1.9 6.8L3 29l6.7-2.1c1.9 1.1 4.1 1.7 6.3 1.7 7 0 12.7-5.7 12.7-12.7C28.7 8.7 23 3 16 3zm0 23.1c-2 0-3.9-.5-5.6-1.5l-.4-.2-4 1.2 1.2-3.9-.3-.4c-1.1-1.8-1.7-3.8-1.7-5.9C5.2 9.8 10 5 16 5s10.8 4.8 10.8 10.7S22 26.1 16 26.1zm5.9-8c-.3-.2-1.9-.9-2.2-1.1-.3-.1-.5-.2-.7.2s-.8 1.1-1 1.3c-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-2-1.8-2.3-.2-.3 0-.5.1-.7.1-.1.3-.4.5-.5.2-.2.2-.3.3-.5.1-.2 0-.4 0-.6s-.7-1.7-1-2.3c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1.1 2.8 1.2 3c.1.2 2.1 3.3 5.2 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.9-.8 2.1-1.5.3-.7.3-1.4.2-1.5-.1-.1-.3-.2-.6-.4z"/></svg>
+  </a>
+  <a href="tel:+919527868342" class="fab fab--call" aria-label="Call Air Cool System">
+    <svg viewBox="0 0 24 24" width="22" height="22"><path fill="#fff" d="M6.6 10.8c1.4 2.8 3.7 5 6.5 6.5l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.5.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.5.1.4 0 .8-.2 1L6.6 10.8z"/></svg>
+  </a>
+</div>
+
+<script src="js/script.js"></script>
+<script>
+  const form = document.getElementById('bookingForm');
+  const submitBtn = form.querySelector('button[type="submit"]');
+
+  form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      const originalText = submitBtn.textContent;
+      submitBtn.textContent = "Submitting...";
+      submitBtn.disabled = true;
+
+      const formData = new FormData(form);
+
+      try {
+          const response = await fetch("https://api.web3forms.com/submit", {
+              method: "POST",
+              body: formData
+          });
+
+          const data = await response.json();
+
+          if (response.ok) {
+              // Redirect directly to the professional thank you page
+              window.location.href = "thankyou.html";
+          } else {
+              alert("Error: " + data.message);
+              submitBtn.textContent = originalText;
+              submitBtn.disabled = false;
+          }
+      } catch (error) {
+          alert("Something went wrong. Please try again.");
+          submitBtn.textContent = originalText;
+          submitBtn.disabled = false;
+      }
+  });
+</script>
+</body>
+</html>
