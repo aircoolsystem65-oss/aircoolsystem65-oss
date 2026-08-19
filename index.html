@@ -37,7 +37,7 @@
     </a>
 
     <nav class="nav" id="mainNav">
-      <a href="#top">Home</a>
+      <a href="#home">Home</a>
       <a href="#booking">Book Now</a>
       <a href="#services">Services</a>
       <a href="#why-us">Why Us</a>
@@ -59,29 +59,34 @@
 <main>
 
   <!-- ===== Hero (headline first, no image — image moves below the booking form) ===== -->
-  <section class="hero">
+  <section id="home" class="hero">
     <div class="hero__waves" aria-hidden="true"></div>
-    <div class="container hero__inner">
-      <div class="hero__content">
-        <div class="hero-badge" style="display: inline-flex; align-items: center; gap: 8px; background: rgba(0, 123, 255, 0.1); padding: 6px 12px; border-radius: 20px; margin-bottom: 15px; font-weight: 600; color: #007bff;">          
-          <span class="ping-dot" style="width: 10px; height: 10px; background-color: #28a745; border-radius: 50%; display: inline-block; animation: ping 1s infinite ease-in-out;"></span>          
+    <div class="container hero__inner" style="width: 100%; max-width: 1200px; margin: 0 auto; box-sizing: border-box;">
+      <div class="hero__content" style="width: 100%; box-sizing: border-box;">
+        
+        <div class="hero-badge" style="display: inline-flex; align-items: center; gap: 8px; background: rgba(0, 123, 255, 0.1); padding: 6px 14px; border-radius: 20px; margin-bottom: 15px; font-weight: 600; color: #007bff; font-size: 0.9rem; max-width: 100%; white-space: normal; word-break: break-word; box-sizing: border-box;">          
+          <span class="ping-dot" style="width: 10px; height: 10px; min-width: 10px; background-color: #28a745; border-radius: 50%; display: inline-block; animation: ping 1s infinite ease-in-out;"></span>          
           Available Now: Nallasopara, Vasai &amp; Virar        
         </div>
-        <span class="eyebrow">Nallasopara, Vasai &amp; Virar's Local Repair Experts</span>
-        <h1>Fast, Honest Repairs for Every&nbsp;<span class="text-accent">Home Appliance</span></h1>
-        <p class="hero__tagline">Your Comfort, Our Responsibility | Thandi Hawa, Behtar Zindagi!</p>
-        <p class="hero__desc">From AC gas filling to fridge cooling issues, washing machine breakdowns to TV panel faults — our trained technicians reach your doorstep with genuine parts and transparent pricing.</p>
 
-        <div class="hero__actions">
-          <a href="#booking" class="btn btn--accent btn--lg">Book a Technician</a>
-          <a href="tel:+919527868342" class="btn btn--outline btn--lg">📞 Call +91 95278 68342</a>
+        <span class="eyebrow" style="display: block; font-size: 0.95rem; margin-bottom: 8px; word-break: break-word;">Nallasopara, Vasai &amp; Virar's Local Repair Experts</span>
+        
+        <h1 style="word-break: break-word; overflow-wrap: break-word;">Fast, Honest Repairs for Every&nbsp;<span class="text-accent">Home Appliance</span></h1>
+        
+        <p class="hero__tagline" style="word-break: break-word;">Your Comfort, Our Responsibility | Thandi Hawa, Behtar Zindagi!</p>
+        
+        <p class="hero__desc" style="word-break: break-word;">From AC gas filling to fridge cooling issues, washing machine breakdowns to TV panel faults — our trained technicians reach your doorstep with genuine parts and transparent pricing.</p>
+
+        <div class="hero__actions" style="display: flex; flex-wrap: wrap; gap: 12px; width: 100%; box-sizing: border-box;">
+          <a href="#booking" class="btn btn--accent btn--lg" style="flex: 1; min-width: 140px; text-align: center; box-sizing: border-box;">Book a Technician</a>
+          <a href="tel:+919527868342" class="btn btn--outline btn--lg" style="flex: 1; min-width: 140px; text-align: center; box-sizing: border-box;">📞 Call +91 95278 68342</a>
         </div>
 
-        <ul class="hero__badges">
-          <li>✔ 100% Satisfaction</li>
-          <li>✔ Same-Day Service</li>
-          <li>✔ Genuine Parts</li>
-          <li>✔ 24/7 Emergency</li>
+        <ul class="hero__badges" style="display: flex; flex-wrap: wrap; gap: 10px; padding: 0; list-style: none; margin-top: 20px;">
+          <li style="white-space: nowrap;">✔ 100% Satisfaction</li>
+          <li style="white-space: nowrap;">✔ Same-Day Service</li>
+          <li style="white-space: nowrap;">✔ Genuine Parts</li>
+          <li style="white-space: nowrap;">✔ 24/7 Emergency</li>
         </ul>
       </div>
     </div>
