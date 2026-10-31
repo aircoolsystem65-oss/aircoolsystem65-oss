@@ -54,32 +54,36 @@ function gtag_report_conversion(url) {
 </div>  -->
 
 <!-- ===== Header / Nav ===== -->
-<header class="header" id="top">
-  <div class="container header__inner">
-    <a href="#top" class="brand">
-      <img src="images/logo.jpg" alt="Air Cool System logo" width="44" height="44">
+<header class="header" id="top" style="background: linear-gradient(135deg, #0d1b2a 0%, #1b263b 100%); border-bottom: 2px solid #ffd700; position: sticky; top: 0; z-index: 1000;">
+  <div class="container header__inner" style="display: flex; align-items: center; justify-content: space-between; padding: 10px 15px; max-width: 1200px; margin: 0 auto; position: relative;">
+    <a href="#top" class="brand" style="display: flex; align-items: center; gap: 10px; text-decoration: none;">
+      <img src="images/logo.jpg" alt="Air Cool System logo" width="44" height="44" style="border-radius: 50%; border: 2px solid #ffd700; box-shadow: 0 0 8px rgba(255, 215, 0, 0.5);">
       <span class="brand__text">
-        <strong>Air Cool System</strong>
-        <small>Cooling &amp; Appliance Care</small>
+        <strong style="color: #ffffff; font-size: 1.15rem; display: block; text-shadow: 0 0 8px rgba(255, 215, 0, 0.8);">Air Cool System</strong>
+        <small style="color: #ffd700; font-size: 0.75rem; font-weight: 700; display: block;">Cooling &amp; Appliance Care</small>
       </span>
     </a>
 
-    <nav class="nav" id="mainNav">
-      <a href="#home">Home</a>
-      <a href="#booking">Book Now</a>
-      <a href="#services">Services</a>
-      <a href="#why-us">Why Us</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
+    <!-- Mobile Menu Container with Dark Background & Sharp White/Gold Links -->
+    <nav class="nav" id="mainNav" style="display: flex; gap: 15px; align-items: center; background: #0d1b2a; border-bottom: 2px solid #ffd700;">
+      <a href="#home" style="color: #ffffff; text-decoration: none; font-weight: 700; padding: 8px 12px; display: block;">Home</a>
+      <a href="#booking" style="color: #ffffff; text-decoration: none; font-weight: 700; padding: 8px 12px; display: block;">Book Now</a>
+      <a href="#services" style="color: #ffffff; text-decoration: none; font-weight: 700; padding: 8px 12px; display: block;">Services</a>
+      <a href="#why-us" style="color: #ffffff; text-decoration: none; font-weight: 700; padding: 8px 12px; display: block;">Why Us</a>
+      <a href="#about" style="color: #ffffff; text-decoration: none; font-weight: 700; padding: 8px 12px; display: block;">About</a>
+      <a href="#contact" style="color: #ffffff; text-decoration: none; font-weight: 700; padding: 8px 12px; display: block;">Contact</a>
     </nav>
 
-    <div class="header__cta">
-  <a href="tel:+919527868342" class="btn btn--ghost" onclick="return gtag_report_conversion('tel:+919527868342');">Call Now</a>
-  <a href="#booking" class="btn btn--primary">Book a Repair</a>
-</div>
+    <div class="header__cta" style="display: flex; gap: 10px; align-items: center;">
+      <a href="tel:+919527868342" class="btn btn--ghost" onclick="return gtag_report_conversion('tel:+919527868342');" style="background: linear-gradient(135deg, #0ea5e9 0%, #2563eb 100%); color: #ffffff; padding: 8px 16px; border-radius: 20px; text-decoration: none; font-weight: 700; font-size: 0.85rem; border: 1px solid #0ea5e9; box-shadow: 0 0 10px rgba(14, 165, 233, 0.5);">Call Now</a>
+      <a href="#booking" class="btn btn--primary" style="background: linear-gradient(135deg, #bf953f 0%, #fcf6ba 25%, #b38728 50%, #fbf5b7 75%, #aa771c 100%); color: #000000; padding: 8px 16px; border-radius: 20px; text-decoration: none; font-weight: 800; font-size: 0.85rem; border: 1px solid #ffe600; box-shadow: 0 0 12px rgba(255, 215, 0, 0.6); text-transform: uppercase;">Book a Repair</a>
+    </div>
 
-    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">
-      <span></span><span></span><span></span>
+    <!-- Golden Visible Hamburger Button for Mobile -->
+    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav" style="background: rgba(255, 215, 0, 0.15); border: 1px solid #ffd700; border-radius: 6px; padding: 6px; cursor: pointer; display: flex; flex-direction: column; justify-content: space-around; width: 36px; height: 34px; box-sizing: border-box;">
+      <span style="background-color: #ffd700 !important; display: block; width: 100%; height: 3px; border-radius: 2px; box-shadow: 0 0 4px #ffd700;"></span>
+      <span style="background-color: #ffd700 !important; display: block; width: 100%; height: 3px; border-radius: 2px; box-shadow: 0 0 4px #ffd700;"></span>
+      <span style="background-color: #ffd700 !important; display: block; width: 100%; height: 3px; border-radius: 2px; box-shadow: 0 0 4px #ffd700;"></span>
     </button>
   </div>
 </header>
@@ -87,40 +91,40 @@ function gtag_report_conversion(url) {
 <main>
 
   <!-- ===== Hero (headline first, no image — image moves below the booking form) ===== -->
-  <section id="home" class="hero" style="background: linear-gradient(135deg, #0d1b2a 0%, #1b263b 50%, #415a77 100%); padding: 50px 0; position: relative; overflow: hidden;">
+  <section id="home" class="hero" style="background: linear-gradient(135deg, #0d1b2a 0%, #1b263b 50%, #415a77 100%); padding: 50px 0; position: relative; overflow: hidden; border-bottom: 3px solid #bf953f;">
     <div class="hero__waves" aria-hidden="true"></div>
-    <div class="container hero__inner" style="width: 100%; max-width: 1200px; margin: 0 auto; box-sizing: border-box;">
+    <div class="container hero__inner" style="width: 100%; max-width: 1200px; margin: 0 auto; box-sizing: border-box; padding: 0 15px;">
       <div class="hero__content" style="width: 100%; box-sizing: border-box;">
         
-        <div class="hero-badge" style="display: inline-flex; align-items: center; gap: 8px; background: rgba(212, 175, 55, 0.15); padding: 6px 14px; border-radius: 20px; margin-bottom: 15px; font-weight: 600; color: #ffd700; font-size: 0.9rem; max-width: 100%; white-space: normal; word-break: break-word; box-sizing: border-box; border: 1px solid rgba(212, 175, 55, 0.4);">          
-          <span class="ping-dot" style="width: 10px; height: 10px; min-width: 10px; background-color: #28a745; border-radius: 50%; display: inline-block; animation: ping 1s infinite ease-in-out;"></span>          
+        <div class="hero-badge" style="display: inline-flex; align-items: center; gap: 8px; background: rgba(212, 175, 55, 0.15); padding: 6px 14px; border-radius: 20px; margin-bottom: 15px; font-weight: 700; color: #ffd700; font-size: 0.9rem; max-width: 100%; white-space: normal; word-break: break-word; box-sizing: border-box; border: 1px solid rgba(212, 175, 55, 0.6); box-shadow: 0 0 10px rgba(255, 215, 0, 0.2);">          
+          <span class="ping-dot" style="width: 10px; height: 10px; min-width: 10px; background-color: #28a745; border-radius: 50%; display: inline-block; animation: ping 1s infinite ease-in-out; box-shadow: 0 0 8px #28a745;"></span>          
           Available Now: Nallasopara, Vasai &amp; Virar, Naigaon          
         </div>
 
-        <span class="eyebrow" style="display: block; font-size: 0.95rem; margin-bottom: 8px; word-break: break-word; color: #e2e8f0;">Nallasopara, Vasai, Naigaon &amp; Virar's Local Repair Experts</span>
+        <span class="eyebrow" style="display: block; font-size: 0.95rem; margin-bottom: 8px; word-break: break-word; color: #38bdf8; font-weight: 600;">Nallasopara, Vasai, Naigaon &amp; Virar's Local Repair Experts</span>
         
-        <h1 style="word-break: break-word; overflow-wrap: break-word; color: #ffffff;">Fast, Honest Repairs for Every&nbsp;<span class="text-accent">Home Appliance</span></h1>
+        <h1 style="word-break: break-word; overflow-wrap: break-word; color: #ffffff; text-shadow: 0 2px 8px rgba(0,0,0,0.5);">Fast, Honest Repairs for Every&nbsp;<span class="text-accent" style="color: #ffd700; text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);">Home Appliance</span></h1>
         
-        <p class="hero__tagline" style="word-break: break-word; font-size: 1.1rem; font-weight: 500; color: #76ff03; margin-bottom: 12px;">✨ Professional Repair & Maintenance with Genuine Service Guarantee</p>
+        <p class="hero__tagline" style="word-break: break-word; font-size: 1.1rem; font-weight: 700; color: #76ff03; margin-bottom: 12px; text-shadow: 0 0 6px rgba(118, 255, 3, 0.4);">✨ Professional Repair & Maintenance with Genuine Service Guarantee</p>
         
-        <p class="hero__desc" style="word-break: break-word; font-size: 1.15rem; font-weight: 700; color: #ffd700; line-height: 1.6; text-shadow: 0 1px 2px rgba(0,0,0,0.3); margin-bottom: 10px;">
+        <p class="hero__desc" style="word-break: break-word; font-size: 1.15rem; font-weight: 800; color: #ffd700; line-height: 1.6; text-shadow: 0 1px 3px rgba(0,0,0,0.6); margin-bottom: 12px; background: rgba(0, 0, 0, 0.3); padding: 10px 12px; border-left: 4px solid #ffd700; border-radius: 4px;">
           ⚡ 30 Mins Fast Service | AC Service ₹499 | AC Uninstallation ₹499 | AC installation ₹999 | Washing Machine Repair ₹199 | TV Repair ₹199
         </p>
 
-        <p style="word-break: break-word; font-size: 1rem; color: #f1f5f9; margin-bottom: 20px; font-weight: 500;">
+        <p style="word-break: break-word; font-size: 1rem; color: #f1f5f9; margin-bottom: 20px; font-weight: 600;">
           100% Transparent Pricing &amp; Trained Technicians at Your Doorstep!
         </p>
 
         <div class="hero__actions" style="display: flex; flex-wrap: wrap; gap: 12px; width: 100%; max-width: 100%; box-sizing: border-box;">
-          <a href="#booking" class="btn btn--accent btn--lg" style="flex: 1; min-width: 140px; max-width: 100%; text-align: center; box-sizing: border-box; word-break: break-word; background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); color: #ffffff; font-weight: 700; border: none; box-shadow: 0 4px 15px rgba(245, 158, 11, 0.4); border-radius: 8px;">Book Now</a>
-          <a href="tel:+919527868342" class="btn btn--outline btn--lg" style="flex: 1; min-width: 140px; max-width: 100%; text-align: center; box-sizing: border-box; overflow: hidden; text-overflow: ellipsis; white-space: normal; background: linear-gradient(135deg, #0ea5e9 0%, #2563eb 100%); color: #ffffff; font-weight: 700; border: none; box-shadow: 0 4px 15px rgba(14, 165, 233, 0.4); border-radius: 8px;" onclick="return gtag_report_conversion('tel:+919527868342');">📞 Call Now - Expert Help</a>
+          <a href="#booking" class="btn btn--accent btn--lg" style="flex: 1; min-width: 140px; max-width: 100%; text-align: center; box-sizing: border-box; word-break: break-word; background: linear-gradient(135deg, #bf953f 0%, #fcf6ba 25%, #b38728 50%, #fbf5b7 75%, #aa771c 100%); color: #000000; font-weight: 900; border: 1px solid #ffe600; box-shadow: 0 0 15px rgba(255, 215, 0, 0.5); border-radius: 25px; text-transform: uppercase; padding: 12px 18px; text-decoration: none;">Book Now</a>
+          <a href="tel:+919527868342" class="btn btn--outline btn--lg" style="flex: 1; min-width: 140px; max-width: 100%; text-align: center; box-sizing: border-box; overflow: hidden; text-overflow: ellipsis; white-space: normal; background: linear-gradient(135deg, #0ea5e9 0%, #2563eb 100%); color: #ffffff; font-weight: 900; border: 1px solid #0ea5e9; box-shadow: 0 0 15px rgba(14, 165, 233, 0.5); border-radius: 25px; padding: 12px 18px; text-decoration: none;" onclick="return gtag_report_conversion('tel:+919527868342');">📞 Call Now - Expert Help</a>
         </div>
 
-        <ul class="hero__badges" style="display: flex; flex-wrap: wrap; gap: 10px; padding: 0; list-style: none; margin-top: 20px; color: #ffffff;">
-          <li style="white-space: nowrap;">✔ 100% Satisfaction</li>
-          <li style="white-space: nowrap;">✔ Same-Day Service</li>
-          <li style="white-space: nowrap;">✔ Genuine Parts</li>
-          <li style="white-space: nowrap;">✔ 24/7 Emergency</li>
+        <ul class="hero__badges" style="display: flex; flex-wrap: wrap; gap: 10px; padding: 0; list-style: none; margin-top: 20px; color: #ffffff; font-weight: 700;">
+          <li style="white-space: nowrap; background: rgba(255,255,255,0.1); padding: 5px 10px; border-radius: 15px; border: 1px solid rgba(255,255,255,0.2);">✔ 100% Satisfaction</li>
+          <li style="white-space: nowrap; background: rgba(255,255,255,0.1); padding: 5px 10px; border-radius: 15px; border: 1px solid rgba(255,255,255,0.2);">✔ Same-Day Service</li>
+          <li style="white-space: nowrap; background: rgba(255,255,255,0.1); padding: 5px 10px; border-radius: 15px; border: 1px solid rgba(255,255,255,0.2);">✔ Genuine Parts</li>
+          <li style="white-space: nowrap; background: rgba(255,255,255,0.1); padding: 5px 10px; border-radius: 15px; border: 1px solid rgba(255,255,255,0.2);">✔ 24/7 Emergency</li>
         </ul>
       </div>
     </div>
@@ -208,139 +212,141 @@ function gtag_report_conversion(url) {
     <div class="booking-footer">⚡ Fast doorstep response within 30 minutes</div>
   </form>
 </section>
-  <!-- ===== Visual band (illustration moved below the booking form, never blocks the headline) ===== -->
-  <section class="hero-visual">
-    <div class="container hero-visual__inner">
-      <div style="text-align: center;">
-        <img src="images/hero-illustration.jpg" alt="Illustration of an air conditioner unit blowing cool air, representing AC and appliance repair services" width="520" height="440" loading="lazy" class="hero-visual__img" style="border-radius: 12px; display: inline-block;">
+  <!-- ===== Visual band (illustration fixed layout) ===== -->
+  <section class="hero-visual" style="background: linear-gradient(135deg, #0a1118 0%, #131e2b 100%); padding: 40px 15px; border-bottom: 2px solid #ffd700;">
+    <div class="container hero-visual__inner" style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 30px; align-items: center; justify-content: center;">
+      <div style="text-align: center; flex: 1; min-width: 280px; display: flex; flex-direction: column; align-items: center;">
+        <img src="images/hero-illustration.jpg" alt="Illustration of an air conditioner unit blowing cool air, representing AC and appliance repair services" width="520" height="440" loading="lazy" class="hero-visual__img" style="border-radius: 12px; display: block; max-width: 100%; height: auto; border: 2px solid #ffd700; box-shadow: 0 0 20px rgba(255, 215, 0, 0.4); background: #111827;">
         
-        <!-- Call Button 1: Sky-Blue & Golden Matching Gradient -->
-        <div style="margin-top: 15px;">
-          <a href="tel:+919527868342" onclick="return gtag_report_conversion('tel:+919527868342');" style="display: inline-flex; align-items: center; justify-content: center; gap: 8px; background: linear-gradient(135deg, #0ea5e9 0%, #3b82f6 50%, #f59e0b 100%); color: #ffffff; padding: 12px 24px; border-radius: 30px; font-size: 1rem; font-weight: 700; text-decoration: none; box-shadow: 0 4px 15px rgba(14, 165, 233, 0.4);">
-            <span style="font-size: 1.1rem;">📞</span> Call Expert Now
+        <!-- Call Button 1: Golden & Blue Glowing Button -->
+        <div style="margin-top: 18px;">
+          <a href="tel:+919527868342" onclick="return gtag_report_conversion('tel:+919527868342');" style="display: inline-flex; align-items: center; justify-content: center; gap: 8px; background: linear-gradient(135deg, #bf953f 0%, #fcf6ba 25%, #b38728 50%, #fbf5b7 75%, #aa771c 100%); color: #000000; padding: 12px 26px; border-radius: 30px; font-size: 1.05rem; font-weight: 800; text-decoration: none; border: 1px solid #ffe600; box-shadow: 0 0 18px rgba(255, 215, 0, 0.6); text-transform: uppercase;">
+            <span style="font-size: 1.2rem;">📞</span> Call Expert Now
           </a>
         </div>
       </div>
 
-      <div class="hero-visual__text">
-        <span class="eyebrow">Ready When You Need Us</span>
-        <h2>Fully Equipped for Same-Day Repairs</h2>
-        <p>Our technicians carry genuine parts, gauges and tools for AC, fridge, washing machine and TV jobs — so most repairs are finished in a single visit. We guarantee transparent pricing with no hidden charges, ensuring complete peace of mind before any work begins. Every service is backed by a solid workmanship warranty to guarantee long-lasting cooling and performance. Operating locally across <strong style="color: #ffd700;">Nallasopara</strong>, <strong style="color: #ffd700;">Vasai</strong>, and <strong style="color: #ffd700;">Virar, Naigaon</strong>, our expert team ensures rapid doorstep arrival right when you need it most.</p>
+      <div class="hero-visual__text" style="flex: 1.2; min-width: 280px;">
+        <span class="eyebrow" style="color: #38bdf8; font-weight: 700; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 1px; display: block; margin-bottom: 6px;">Ready When You Need Us</span>
+        <h2 style="color: #ffffff; font-size: 2rem; font-weight: 800; margin-bottom: 12px; text-shadow: 0 0 10px rgba(0,0,0,0.8);">Fully Equipped for Same-Day Repairs</h2>
+        <p style="color: #e2e8f0; font-size: 1.05rem; line-height: 1.6; margin-bottom: 15px;">Our technicians carry genuine parts, gauges and tools for AC, fridge, washing machine and TV jobs — so most repairs are finished in a single visit. We guarantee transparent pricing with no hidden charges, ensuring complete peace of mind before any work begins. Every service is backed by a solid workmanship warranty to guarantee long-lasting cooling and performance. Operating locally across <strong style="color: #ffd700; text-shadow: 0 0 6px rgba(255, 215, 0, 0.5);">Nallasopara</strong>, <strong style="color: #ffd700; text-shadow: 0 0 6px rgba(255, 215, 0, 0.5);">Vasai</strong>, and <strong style="color: #ffd700; text-shadow: 0 0 6px rgba(255, 215, 0, 0.5);">Virar, Naigaon</strong>, our expert team ensures rapid doorstep arrival right when you need it most.</p>
         
-        <!-- Call Button 2: Rich Golden & Sky-Blue Accent -->
+        <!-- Call Button 2: Rich Sky-Blue Glowing Button -->
         <div style="margin-top: 20px;">
-          <a href="tel:+919527868342" onclick="return gtag_report_conversion('tel:+919527868342');" style="display: inline-flex; align-items: center; justify-content: center; gap: 8px; background: linear-gradient(135deg, #d97706 0%, #0284c7 100%); color: #ffffff; padding: 12px 24px; border-radius: 30px; font-size: 1rem; font-weight: 700; text-decoration: none; box-shadow: 0 4px 15px rgba(217, 119, 6, 0.4);">
-            <span style="font-size: 1.1rem;">📞</span> Book Quick Service on Call
+          <a href="tel:+919527868342" onclick="return gtag_report_conversion('tel:+919527868342');" style="display: inline-flex; align-items: center; justify-content: center; gap: 8px; background: linear-gradient(135deg, #00c6ff 0%, #0072ff 100%); color: #ffffff; padding: 12px 26px; border-radius: 30px; font-size: 1.05rem; font-weight: 800; text-decoration: none; border: 1px solid #00c6ff; box-shadow: 0 0 18px rgba(0, 198, 255, 0.6);">
+            <span style="font-size: 1.2rem;">📞</span> Book Quick Service on Call
           </a>
         </div>
       </div>
     </div>
   </section>
         
-        <!-- Service Areas Card (Using your original clean structure with glowing highlights) -->
-        <div class="areas-card" style="margin-top: 20px; width: 100%; box-sizing: border-box;">
-          <div class="areas-head" style="display: flex; align-items: center; gap: 8px; margin-bottom: 10px;">
-            <i class="fa-solid fa-location-arrow" style="color: #ffd700;"></i> 
-            <h3 style="margin: 0; font-size: 1rem; color: #ffd700;">Service Areas We Cover (7:00 AM - 12:00 PM)</h3>
-          </div>
-          <div class="area-chips" style="display: flex; flex-wrap: wrap; gap: 8px; width: 100%;">
-            <span><i class="fa-solid fa-location-dot" style="color: #ffd700;"></i> <strong style="color: #ffd700;">Virar</strong> East &amp; West</span>
-            <span><i class="fa-solid fa-location-dot" style="color: #ffd700;"></i> <strong style="color: #ffd700;">Nallasopara</strong> East &amp; West</span>
-            <span><i class="fa-solid fa-location-dot" style="color: #ffd700;"></i> <strong style="color: #ffd700;">Vasai</strong> East &amp; West</span>
-            <span><i class="fa-solid fa-location-dot" style="color: #ffd700;"></i> <strong style="color: #ffd700;">Naigaon</strong> East &amp; West</span>
-          </div>
-        </div>
-
-      </div>
+  <!-- Service Areas Card (Using clean structure with glowing highlights) -->
+  <div class="areas-card" style="margin-top: 25px; width: 100%; box-sizing: border-box; background: rgba(15, 23, 42, 0.8); padding: 20px; border-radius: 12px; border: 1.5px solid #ffd700; box-shadow: 0 0 20px rgba(255, 215, 0, 0.25);">
+    <div class="areas-head" style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px;">
+      <i class="fa-solid fa-location-arrow" style="color: #ffd700; font-size: 1.2rem; text-shadow: 0 0 8px #ffd700;"></i> 
+      <h3 style="margin: 0; font-size: 1.1rem; color: #ffd700; font-weight: 800; text-shadow: 0 0 8px rgba(255, 215, 0, 0.5);">Service Areas We Cover (7:00 AM - 12:00 PM)</h3>
     </div>
-  </section>
+    <div class="area-chips" style="display: flex; flex-wrap: wrap; gap: 10px; width: 100%;">
+      <span style="background: rgba(255,215,0,0.12); padding: 8px 14px; border-radius: 20px; border: 1px solid rgba(255,215,0,0.4); color: #ffffff; font-weight: 600;"><i class="fa-solid fa-location-dot" style="color: #ffd700;"></i> <strong style="color: #ffd700;">Virar</strong> East &amp; West</span>
+      <span style="background: rgba(255,215,0,0.12); padding: 8px 14px; border-radius: 20px; border: 1.5px solid rgba(255,215,0,0.4); color: #ffffff; font-weight: 600;"><i class="fa-solid fa-location-dot" style="color: #ffd700;"></i> <strong style="color: #ffd700;">Nallasopara</strong> East &amp; West</span>
+      <span style="background: rgba(255,215,0,0.12); padding: 8px 14px; border-radius: 20px; border: 1.5px solid rgba(255,215,0,0.4); color: #ffffff; font-weight: 600;"><i class="fa-solid fa-location-dot" style="color: #ffd700;"></i> <strong style="color: #ffd700;">Vasai</strong> East &amp; West</span>
+      <span style="background: rgba(255,215,0,0.12); padding: 8px 14px; border-radius: 20px; border: 1.5px solid rgba(255,215,0,0.4); color: #ffffff; font-weight: 600;"><i class="fa-solid fa-location-dot" style="color: #ffd700;"></i> <strong style="color: #ffd700;">Naigaon</strong> East &amp; West</span>
+    </div>
+  </div>
 
-  <!-- ===== Services ===== -->
-  <section class="services" id="services">
-    <div class="container">
-      <div class="section-head">
-        <span class="eyebrow">What We Repair</span>
-        <h2>Our Repair &amp; Installation Services</h2>
-        <p>Certified technicians, genuine spare parts, and honest diagnosis for every major home appliance.</p>
+  <!-- ===== Services (Image Fixed Layout) ===== -->
+  <section class="services" id="services" style="background: #090d16; padding: 50px 15px;">
+    <div class="container" style="max-width: 1200px; margin: 0 auto;">
+      <div class="section-head" style="text-align: center; margin-bottom: 35px;">
+        <span class="eyebrow" style="color: #38bdf8; font-weight: 700; text-transform: uppercase; font-size: 0.95rem; letter-spacing: 1px;">What We Repair</span>
+        <h2 style="color: #ffffff; font-size: 2.2rem; font-weight: 800; margin-top: 6px; text-shadow: 0 0 10px rgba(255,255,255,0.2);">Our Repair &amp; Installation Services</h2>
+        <p style="color: #94a3b8; font-size: 1.05rem; margin-top: 8px;">Certified technicians, genuine spare parts, and honest diagnosis for every major home appliance.</p>
       </div>
 
-      <div class="services__grid">
+      <div class="services__grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 22px;">
 
-        <article class="service-card">
-          <div class="service-card__media">
-            <img src="images/service-ac.jpg" alt="AC repair and servicing" width="400" height="300" loading="lazy">
+        <!-- AC Card -->
+        <article class="service-card" style="background: #111827; border: 1px solid rgba(255,215,0,0.35); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.5);">
+          <div class="service-card__media" style="background: #111827; width: 100%;">
+            <img src="images/service-ac.jpg" alt="AC repair and servicing" width="400" height="300" loading="lazy" style="width: 100%; height: auto; display: block;">
           </div>
-          <div class="service-card__body">
-            <h3>AC Repair, Service &amp; Maintenance</h3>
-            <p>Split &amp; Window AC gas filling, general servicing, cooling problems, water leakage and noise issues — restored fast.</p>
-            <div style="display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-top: 12px;">
-              <a href="#booking" class="service-card__link" style="margin-bottom: 0;">BOOK TRUSTED REPAIR NOW →</a>
-              <a href="tel:+919527868342" onclick="return gtag_report_conversion('tel:+919527868342');" style="display: inline-block; background-color: #007bff; color: #ffffff; padding: 6px 12px; border-radius: 4px; font-size: 0.85rem; font-weight: 600; text-decoration: none; white-space: nowrap;">📞 Call</a>
+          <div class="service-card__body" style="padding: 20px;">
+            <h3 style="color: #ffffff; font-size: 1.25rem; font-weight: 800; margin-bottom: 10px;">AC Repair, Service &amp; Maintenance</h3>
+            <p style="color: #cbd5e1; font-size: 0.95rem; line-height: 1.5; margin-bottom: 15px;">Split &amp; Window AC gas filling, general servicing, cooling problems, water leakage and noise issues — restored fast.</p>
+            <div style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-top: 14px;">
+              <a href="#booking" class="service-card__link" style="margin-bottom: 0; background: linear-gradient(135deg, #bf953f 0%, #fcf6ba 25%, #b38728 50%, #fbf5b7 75%, #aa771c 100%); color: #000000; padding: 10px 16px; border-radius: 25px; font-weight: 900; font-size: 0.8rem; text-decoration: none; box-shadow: 0 0 12px rgba(255,215,0,0.5); text-transform: uppercase;">BOOK TRUSTED REPAIR NOW →</a>
+              <a href="tel:+919527868342" onclick="return gtag_report_conversion('tel:+919527868342');" style="display: inline-block; background: linear-gradient(135deg, #00c6ff 0%, #0072ff 100%); color: #ffffff; padding: 10px 16px; border-radius: 25px; font-size: 0.85rem; font-weight: 800; text-decoration: none; white-space: nowrap; box-shadow: 0 0 12px rgba(0, 198, 255, 0.5);">📞 Call</a>
             </div>
           </div>
         </article>
 
-        <article class="service-card">
-          <div class="service-card__media">
-            <img src="images/service-piping.jpg" alt="AC single-phase piping and installation" width="400" height="300" loading="lazy">
+        <!-- AC Piping Card -->
+        <article class="service-card" style="background: #111827; border: 1px solid rgba(255,215,0,0.35); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.5);">
+          <div class="service-card__media" style="background: #111827; width: 100%;">
+            <img src="images/service-piping.jpg" alt="AC single-phase piping and installation" width="400" height="300" loading="lazy" style="width: 100%; height: auto; display: block;">
           </div>
-          <div class="service-card__body">
-            <h3>AC Piping &amp; Installation</h3>
-            <p>Single phase AC installation with proper copper pipe fitting, uninstallation, and safe relocation of your unit.</p>
-            <div style="display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-top: 12px;">
-              <a href="#booking" class="service-card__link" style="margin-bottom: 0;">BOOK TRUSTED REPAIR NOW →</a>
-              <a href="tel:+919527868342" onclick="return gtag_report_conversion('tel:+919527868342');" style="display: inline-block; background-color: #28a745; color: #ffffff; padding: 6px 12px; border-radius: 4px; font-size: 0.85rem; font-weight: 600; text-decoration: none; white-space: nowrap;">📞 Call</a>
+          <div class="service-card__body" style="padding: 20px;">
+            <h3 style="color: #ffffff; font-size: 1.25rem; font-weight: 800; margin-bottom: 10px;">AC Piping &amp; Installation</h3>
+            <p style="color: #cbd5e1; font-size: 0.95rem; line-height: 1.5; margin-bottom: 15px;">Single phase AC installation with proper copper pipe fitting, uninstallation, and safe relocation of your unit.</p>
+            <div style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-top: 14px;">
+              <a href="#booking" class="service-card__link" style="margin-bottom: 0; background: linear-gradient(135deg, #bf953f 0%, #fcf6ba 25%, #b38728 50%, #fbf5b7 75%, #aa771c 100%); color: #000000; padding: 10px 16px; border-radius: 25px; font-weight: 900; font-size: 0.8rem; text-decoration: none; box-shadow: 0 0 12px rgba(255,215,0,0.5); text-transform: uppercase;">BOOK TRUSTED REPAIR NOW →</a>
+              <a href="tel:+919527868342" onclick="return gtag_report_conversion('tel:+919527868342');" style="display: inline-block; background: linear-gradient(135deg, #00ff87 0%, #60efff 100%); color: #000000; padding: 10px 16px; border-radius: 25px; font-size: 0.85rem; font-weight: 900; text-decoration: none; white-space: nowrap; box-shadow: 0 0 12px rgba(0, 255, 135, 0.5);">📞 Call</a>
             </div>
           </div>
         </article>
 
-        <article class="service-card">
-          <div class="service-card__media">
-            <img src="images/service-fridge.jpg" alt="Refrigerator repair and servicing" width="400" height="300" loading="lazy">
+        <!-- Refrigerator Card -->
+        <article class="service-card" style="background: #111827; border: 1px solid rgba(255,215,0,0.35); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.5);">
+          <div class="service-card__media" style="background: #111827; width: 100%;">
+            <img src="images/service-fridge.jpg" alt="Refrigerator repair and servicing" width="400" height="300" loading="lazy" style="width: 100%; height: auto; display: block;">
           </div>
-          <div class="service-card__body">
-            <h3>Refrigerator Repair &amp; Service</h3>
-            <p>Single &amp; double door fridge repair — cooling failures, gas leakage, compressor and thermostat problems.</p>
-            <div style="display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-top: 12px;">
-              <a href="#booking" class="service-card__link" style="margin-bottom: 0;">BOOK TRUSTED REPAIR NOW →</a>
-              <a href="tel:+919527868342" onclick="return gtag_report_conversion('tel:+919527868342');" style="display: inline-block; background-color: #6f42c1; color: #ffffff; padding: 6px 12px; border-radius: 4px; font-size: 0.85rem; font-weight: 600; text-decoration: none; white-space: nowrap;">📞 Call</a>
+          <div class="service-card__body" style="padding: 20px;">
+            <h3 style="color: #ffffff; font-size: 1.25rem; font-weight: 800; margin-bottom: 10px;">Refrigerator Repair &amp; Service</h3>
+            <p style="color: #cbd5e1; font-size: 0.95rem; line-height: 1.5; margin-bottom: 15px;">Single &amp; double door fridge repair — cooling failures, gas leakage, compressor and thermostat problems.</p>
+            <div style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-top: 14px;">
+              <a href="#booking" class="service-card__link" style="margin-bottom: 0; background: linear-gradient(135deg, #bf953f 0%, #fcf6ba 25%, #b38728 50%, #fbf5b7 75%, #aa771c 100%); color: #000000; padding: 10px 16px; border-radius: 25px; font-weight: 900; font-size: 0.8rem; text-decoration: none; box-shadow: 0 0 12px rgba(255,215,0,0.5); text-transform: uppercase;">BOOK TRUSTED REPAIR NOW →</a>
+              <a href="tel:+919527868342" onclick="return gtag_report_conversion('tel:+919527868342');" style="display: inline-block; background: linear-gradient(135deg, #f72585 0%, #7209b7 100%); color: #ffffff; padding: 10px 16px; border-radius: 25px; font-size: 0.85rem; font-weight: 800; text-decoration: none; white-space: nowrap; box-shadow: 0 0 12px rgba(247, 37, 133, 0.5);">📞 Call</a>
             </div>
           </div>
         </article>
 
-        <article class="service-card">
-          <div class="service-card__media">
-            <img src="images/service-washing.jpg" alt="Washing machine repair and servicing" width="400" height="300" loading="lazy">
+        <!-- Washing Machine Card -->
+        <article class="service-card" style="background: #111827; border: 1px solid rgba(255,215,0,0.35); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.5);">
+          <div class="service-card__media" style="background: #111827; width: 100%;">
+            <img src="images/service-washing.jpg" alt="Washing machine repair and servicing" width="400" height="300" loading="lazy" style="width: 100%; height: auto; display: block;">
           </div>
-          <div class="service-card__body">
-            <h3>Washing Machine Repair &amp; Service</h3>
-            <p>Fully &amp; semi-automatic, top-load and front-load machines — motor, drum, drainage and control panel fixes.</p>
-            <div style="display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-top: 12px;">
-              <a href="#booking" class="service-card__link" style="margin-bottom: 0;">BOOK TRUSTED REPAIR NOW →</a>
-              <a href="tel:+919527868342" onclick="return gtag_report_conversion('tel:+919527868342');" style="display: inline-block; background-color: #17a2b8; color: #ffffff; padding: 6px 12px; border-radius: 4px; font-size: 0.85rem; font-weight: 600; text-decoration: none; white-space: nowrap;">📞 Call</a>
+          <div class="service-card__body" style="padding: 20px;">
+            <h3 style="color: #ffffff; font-size: 1.25rem; font-weight: 800; margin-bottom: 10px;">Washing Machine Repair &amp; Service</h3>
+            <p style="color: #cbd5e1; font-size: 0.95rem; line-height: 1.5; margin-bottom: 15px;">Fully &amp; semi-automatic, top-load and front-load machines — motor, drum, drainage and control panel fixes.</p>
+            <div style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-top: 14px;">
+              <a href="#booking" class="service-card__link" style="margin-bottom: 0; background: linear-gradient(135deg, #bf953f 0%, #fcf6ba 25%, #b38728 50%, #fbf5b7 75%, #aa771c 100%); color: #000000; padding: 10px 16px; border-radius: 25px; font-weight: 900; font-size: 0.8rem; text-decoration: none; box-shadow: 0 0 12px rgba(255,215,0,0.5); text-transform: uppercase;">BOOK TRUSTED REPAIR NOW →</a>
+              <a href="tel:+919527868342" onclick="return gtag_report_conversion('tel:+919527868342');" style="display: inline-block; background: linear-gradient(135deg, #00c6ff 0%, #0072ff 100%); color: #ffffff; padding: 10px 16px; border-radius: 25px; font-size: 0.85rem; font-weight: 800; text-decoration: none; white-space: nowrap; box-shadow: 0 0 12px rgba(0, 198, 255, 0.5);">📞 Call</a>
             </div>
           </div>
         </article>
 
-        <article class="service-card">
-          <div class="service-card__media">
-            <img src="images/service-tv.jpg" alt="TV repair and servicing" width="400" height="300" loading="lazy">
+        <!-- TV Card -->
+        <article class="service-card" style="background: #111827; border: 1px solid rgba(255,215,0,0.35); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.5);">
+          <div class="service-card__media" style="background: #111827; width: 100%;">
+            <img src="images/service-tv.jpg" alt="TV repair and servicing" width="400" height="300" loading="lazy" style="width: 100%; height: auto; display: block;">
           </div>
-          <div class="service-card__body">
-            <h3>TV Repair &amp; Service</h3>
-            <p>LED, LCD &amp; Smart TV display and panel solutions, power issues, and software troubleshooting.</p>
-            <div style="display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-top: 12px;">
-              <a href="#booking" class="service-card__link" style="margin-bottom: 0;">BOOK TRUSTED REPAIR NOW →</a>
-              <a href="tel:+919527868342" onclick="return gtag_report_conversion('tel:+919527868342');" style="display: inline-block; background-color: #fd7e14; color: #ffffff; padding: 6px 12px; border-radius: 4px; font-size: 0.85rem; font-weight: 600; text-decoration: none; white-space: nowrap;">📞 Call</a>
+          <div class="service-card__body" style="padding: 20px;">
+            <h3 style="color: #ffffff; font-size: 1.25rem; font-weight: 800; margin-bottom: 10px;">TV Repair &amp; Service</h3>
+            <p style="color: #cbd5e1; font-size: 0.95rem; line-height: 1.5; margin-bottom: 15px;">LED, LCD &amp; Smart TV display and panel solutions, power issues, and software troubleshooting.</p>
+            <div style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-top: 14px;">
+              <a href="#booking" class="service-card__link" style="margin-bottom: 0; background: linear-gradient(135deg, #bf953f 0%, #fcf6ba 25%, #b38728 50%, #fbf5b7 75%, #aa771c 100%); color: #000000; padding: 10px 16px; border-radius: 25px; font-weight: 900; font-size: 0.8rem; text-decoration: none; box-shadow: 0 0 12px rgba(255,215,0,0.5); text-transform: uppercase;">BOOK TRUSTED REPAIR NOW →</a>
+              <a href="tel:+919527868342" onclick="return gtag_report_conversion('tel:+919527868342');" style="display: inline-block; background: linear-gradient(135deg, #f12711 0%, #f5af19 100%); color: #ffffff; padding: 10px 16px; border-radius: 25px; font-size: 0.85rem; font-weight: 800; text-decoration: none; white-space: nowrap; box-shadow: 0 0 12px rgba(245, 175, 25, 0.5);">📞 Call</a>
             </div>
           </div>
         </article>
 
-        <article class="service-card service-card--cta">
-          <div class="service-card__body">
-            <h3>Not sure what's wrong?</h3>
-            <p>Send us a photo or describe the issue on WhatsApp — we'll guide you before we even arrive.</p>
-            <a href="https://wa.me/919527868342" target="_blank" rel="noopener" class="btn btn--accent">Chat on WhatsApp</a>
+        <!-- WhatsApp CTA Card -->
+        <article class="service-card service-card--cta" style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); border: 2px dashed #ffd700; border-radius: 12px; overflow: hidden; display: flex; align-items: center; box-shadow: 0 0 20px rgba(255,215,0,0.2);">
+          <div class="service-card__body" style="padding: 25px; text-align: center; width: 100%;">
+            <h3 style="color: #ffd700; font-size: 1.3rem; font-weight: 800; margin-bottom: 10px; text-shadow: 0 0 8px rgba(255,215,0,0.6);">Not sure what's wrong?</h3>
+            <p style="color: #ffffff; font-size: 0.95rem; line-height: 1.5; margin-bottom: 18px;">Send us a photo or describe the issue on WhatsApp — we'll guide you before we even arrive.</p>
+            <a href="https://wa.me/919527868342" target="_blank" rel="noopener" class="btn btn--accent" style="display: inline-block; background: linear-gradient(135deg, #25d366 0%, #128c7e 100%); color: #ffffff; padding: 12px 24px; border-radius: 30px; font-weight: 800; text-decoration: none; box-shadow: 0 0 18px rgba(37, 211, 102, 0.6); text-transform: uppercase;">Chat on WhatsApp</a>
           </div>
         </article>
 
@@ -349,77 +355,77 @@ function gtag_report_conversion(url) {
   </section>
 
   <!-- ===== Why Choose Us ===== -->
-  <section class="why-us" id="why-us" style="padding: 60px 0;">
-    <div class="container">
+  <section class="why-us" id="why-us" style="padding: 60px 15px; background: #090d16;">
+    <div class="container" style="max-width: 1200px; margin: 0 auto;">
       <div class="section-head section-head--light" style="text-align: center; margin-bottom: 40px;">
-        <span class="eyebrow eyebrow--light" style="color: #ffd700; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">Why Choose Us</span>
-        <h2 style="color: #ffffff; font-size: 2.2rem; margin-top: 10px;">Repairs You Can Trust</h2>
+        <span class="eyebrow eyebrow--light" style="color: #38bdf8; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; font-size: 0.95rem;">Why Choose Us</span>
+        <h2 style="color: #ffffff; font-size: 2.2rem; font-weight: 800; margin-top: 6px; text-shadow: 0 0 10px rgba(255,255,255,0.2);">Repairs You Can Trust</h2>
       </div>
 
-      <div class="why-us__grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+      <div class="why-us__grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 22px;">
         
         <!-- Card 1 -->
-        <div class="why-card" style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); padding: 25px; border-radius: 12px; display: flex; flex-direction: column; justify-content: space-between;">
+        <div class="why-card" style="background: #111827; border: 1.5px solid rgba(255, 215, 0, 0.4); padding: 25px; border-radius: 12px; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 4px 20px rgba(0,0,0,0.5);">
           <div>
-            <img src="images/icon-satisfaction.jpg" alt="" width="48" height="48" style="margin-bottom: 15px;">
-            <h3 style="color: #ffffff; font-size: 1.25rem; margin-bottom: 10px;">100% Satisfaction Guaranteed</h3>
+            <img src="images/icon-satisfaction.jpg" alt="" width="48" height="48" style="margin-bottom: 15px; filter: drop-shadow(0 0 8px rgba(255,215,0,0.5));">
+            <h3 style="color: #ffffff; font-size: 1.25rem; font-weight: 800; margin-bottom: 10px;">100% Satisfaction Guaranteed</h3>
             <p style="color: #cbd5e1; font-size: 0.95rem; line-height: 1.5; margin-bottom: 20px;">We're not done until your appliance works right and you're happy with the result.</p>
           </div>
-          <div style="display: flex; gap: 10px; flex-wrap: wrap;">
-            <a href="#booking" style="flex: 1; background: #2563eb; color: #ffffff; padding: 8px 12px; border-radius: 6px; text-align: center; font-size: 0.85rem; font-weight: 600; text-decoration: none;">Book Now</a>
-            <a href="tel:+919527868342" onclick="return gtag_report_conversion('tel:+919527868342');" style="background: #10b981; color: #ffffff; padding: 8px 14px; border-radius: 6px; text-align: center; font-size: 0.85rem; font-weight: 600; text-decoration: none; white-space: nowrap;">📞 Call</a>
+          <div style="display: flex; gap: 10px; flex-wrap: wrap; align-items: center;">
+            <a href="#booking" style="flex: 1; background: linear-gradient(135deg, #bf953f 0%, #fcf6ba 25%, #b38728 50%, #fbf5b7 75%, #aa771c 100%); color: #000000; padding: 10px 14px; border-radius: 25px; text-align: center; font-size: 0.85rem; font-weight: 900; text-decoration: none; box-shadow: 0 0 12px rgba(255,215,0,0.5); text-transform: uppercase;">Book Now</a>
+            <a href="tel:+919527868342" onclick="return gtag_report_conversion('tel:+919527868342');" style="background: linear-gradient(135deg, #00ff87 0%, #60efff 100%); color: #000000; padding: 10px 16px; border-radius: 25px; text-align: center; font-size: 0.85rem; font-weight: 900; text-decoration: none; white-space: nowrap; box-shadow: 0 0 12px rgba(0, 255, 135, 0.5);">📞 Call</a>
           </div>
         </div>
 
         <!-- Card 2 -->
-        <div class="why-card" style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); padding: 25px; border-radius: 12px; display: flex; flex-direction: column; justify-content: space-between;">
+        <div class="why-card" style="background: #111827; border: 1.5px solid rgba(255, 215, 0, 0.4); padding: 25px; border-radius: 12px; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 4px 20px rgba(0,0,0,0.5);">
           <div>
-            <img src="images/icon-expert.jpg" alt="" width="48" height="48" style="margin-bottom: 15px;">
-            <h3 style="color: #ffffff; font-size: 1.25rem; margin-bottom: 10px;">Expert Technicians</h3>
+            <img src="images/icon-expert.jpg" alt="" width="48" height="48" style="margin-bottom: 15px; filter: drop-shadow(0 0 8px rgba(255,215,0,0.5));">
+            <h3 style="color: #ffffff; font-size: 1.25rem; font-weight: 800; margin-bottom: 10px;">Expert Technicians</h3>
             <p style="color: #cbd5e1; font-size: 0.95rem; line-height: 1.5; margin-bottom: 20px;">Trained, experienced professionals who diagnose the real problem — not just the symptom.</p>
           </div>
-          <div style="display: flex; gap: 10px; flex-wrap: wrap;">
-            <a href="#booking" style="flex: 1; background: #2563eb; color: #ffffff; padding: 8px 12px; border-radius: 6px; text-align: center; font-size: 0.85rem; font-weight: 600; text-decoration: none;">Book Now</a>
-            <a href="tel:+919527868342" onclick="return gtag_report_conversion('tel:+919527868342');" style="background: #8b5cf6; color: #ffffff; padding: 8px 14px; border-radius: 6px; text-align: center; font-size: 0.85rem; font-weight: 600; text-decoration: none; white-space: nowrap;">📞 Call</a>
+          <div style="display: flex; gap: 10px; flex-wrap: wrap; align-items: center;">
+            <a href="#booking" style="flex: 1; background: linear-gradient(135deg, #bf953f 0%, #fcf6ba 25%, #b38728 50%, #fbf5b7 75%, #aa771c 100%); color: #000000; padding: 10px 14px; border-radius: 25px; text-align: center; font-size: 0.85rem; font-weight: 900; text-decoration: none; box-shadow: 0 0 12px rgba(255,215,0,0.5); text-transform: uppercase;">Book Now</a>
+            <a href="tel:+919527868342" onclick="return gtag_report_conversion('tel:+919527868342');" style="background: linear-gradient(135deg, #00c6ff 0%, #0072ff 100%); color: #ffffff; padding: 10px 16px; border-radius: 25px; text-align: center; font-size: 0.85rem; font-weight: 800; text-decoration: none; white-space: nowrap; box-shadow: 0 0 12px rgba(0, 198, 255, 0.5);">📞 Call</a>
           </div>
         </div>
 
         <!-- Card 3 -->
-        <div class="why-card" style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); padding: 25px; border-radius: 12px; display: flex; flex-direction: column; justify-content: space-between;">
+        <div class="why-card" style="background: #111827; border: 1.5px solid rgba(255, 215, 0, 0.4); padding: 25px; border-radius: 12px; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 4px 20px rgba(0,0,0,0.5);">
           <div>
-            <img src="images/icon-price.jpg" alt="" width="48" height="48" style="margin-bottom: 15px;">
-            <h3 style="color: #ffffff; font-size: 1.25rem; margin-bottom: 10px;">Reasonable Prices &amp; Genuine Parts</h3>
+            <img src="images/icon-price.jpg" alt="" width="48" height="48" style="margin-bottom: 15px; filter: drop-shadow(0 0 8px rgba(255,215,0,0.5));">
+            <h3 style="color: #ffffff; font-size: 1.25rem; font-weight: 800; margin-bottom: 10px;">Reasonable Prices &amp; Genuine Parts</h3>
             <p style="color: #cbd5e1; font-size: 0.95rem; line-height: 1.5; margin-bottom: 20px;">Transparent, upfront pricing with authentic spare parts — no hidden charges, ever.</p>
           </div>
-          <div style="display: flex; gap: 10px; flex-wrap: wrap;">
-            <a href="#booking" style="flex: 1; background: #2563eb; color: #ffffff; padding: 8px 12px; border-radius: 6px; text-align: center; font-size: 0.85rem; font-weight: 600; text-decoration: none;">Book Now</a>
-            <a href="tel:+919527868342" onclick="return gtag_report_conversion('tel:+919527868342');" style="background: #f59e0b; color: #ffffff; padding: 8px 14px; border-radius: 6px; text-align: center; font-size: 0.85rem; font-weight: 600; text-decoration: none; white-space: nowrap;">📞 Call</a>
+          <div style="display: flex; gap: 10px; flex-wrap: wrap; align-items: center;">
+            <a href="#booking" style="flex: 1; background: linear-gradient(135deg, #bf953f 0%, #fcf6ba 25%, #b38728 50%, #fbf5b7 75%, #aa771c 100%); color: #000000; padding: 10px 14px; border-radius: 25px; text-align: center; font-size: 0.85rem; font-weight: 900; text-decoration: none; box-shadow: 0 0 12px rgba(255,215,0,0.5); text-transform: uppercase;">Book Now</a>
+            <a href="tel:+919527868342" onclick="return gtag_report_conversion('tel:+919527868342');" style="background: linear-gradient(135deg, #f72585 0%, #7209b7 100%); color: #ffffff; padding: 10px 16px; border-radius: 25px; text-align: center; font-size: 0.85rem; font-weight: 800; text-decoration: none; white-space: nowrap; box-shadow: 0 0 12px rgba(247, 37, 133, 0.5);">📞 Call</a>
           </div>
         </div>
 
         <!-- Card 4 -->
-        <div class="why-card" style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); padding: 25px; border-radius: 12px; display: flex; flex-direction: column; justify-content: space-between;">
+        <div class="why-card" style="background: #111827; border: 1.5px solid rgba(255, 215, 0, 0.4); padding: 25px; border-radius: 12px; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 4px 20px rgba(0,0,0,0.5);">
           <div>
-            <img src="images/icon-emergency.jpg" alt="" width="48" height="48" style="margin-bottom: 15px;">
-            <h3 style="color: #ffffff; font-size: 1.25rem; margin-bottom: 10px;">Same-Day &amp; 24/7 Emergency Service</h3>
+            <img src="images/icon-emergency.jpg" alt="" width="48" height="48" style="margin-bottom: 15px; filter: drop-shadow(0 0 8px rgba(255,215,0,0.5));">
+            <h3 style="color: #ffffff; font-size: 1.25rem; font-weight: 800; margin-bottom: 10px;">Same-Day &amp; 24/7 Emergency Service</h3>
             <p style="color: #cbd5e1; font-size: 0.95rem; line-height: 1.5; margin-bottom: 20px;">Appliance broke down at night? We're available around the clock for urgent repairs.</p>
           </div>
-          <div style="display: flex; gap: 10px; flex-wrap: wrap;">
-            <a href="#booking" style="flex: 1; background: #2563eb; color: #ffffff; padding: 8px 12px; border-radius: 6px; text-align: center; font-size: 0.85rem; font-weight: 600; text-decoration: none;">Book Now</a>
-            <a href="tel:+919527868342" onclick="return gtag_report_conversion('tel:+919527868342');" style="background: #ec4899; color: #ffffff; padding: 8px 14px; border-radius: 6px; text-align: center; font-size: 0.85rem; font-weight: 600; text-decoration: none; white-space: nowrap;">📞 Call</a>
+          <div style="display: flex; gap: 10px; flex-wrap: wrap; align-items: center;">
+            <a href="#booking" style="flex: 1; background: linear-gradient(135deg, #bf953f 0%, #fcf6ba 25%, #b38728 50%, #fbf5b7 75%, #aa771c 100%); color: #000000; padding: 10px 14px; border-radius: 25px; text-align: center; font-size: 0.85rem; font-weight: 900; text-decoration: none; box-shadow: 0 0 12px rgba(255,215,0,0.5); text-transform: uppercase;">Book Now</a>
+            <a href="tel:+919527868342" onclick="return gtag_report_conversion('tel:+919527868342');" style="background: linear-gradient(135deg, #f12711 0%, #f5af19 100%); color: #ffffff; padding: 10px 16px; border-radius: 25px; text-align: center; font-size: 0.85rem; font-weight: 800; text-decoration: none; white-space: nowrap; box-shadow: 0 0 12px rgba(245, 175, 25, 0.5);">📞 Call</a>
           </div>
         </div>
 
         <!-- Card 5 -->
-        <div class="why-card" style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); padding: 25px; border-radius: 12px; display: flex; flex-direction: column; justify-content: space-between;">
+        <div class="why-card" style="background: #111827; border: 1.5px solid rgba(255, 215, 0, 0.4); padding: 25px; border-radius: 12px; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 4px 20px rgba(0,0,0,0.5);">
           <div>
-            <img src="images/icon-brands.jpg" alt="" width="48" height="48" style="margin-bottom: 15px;">
-            <h3 style="color: #ffffff; font-size: 1.25rem; margin-bottom: 10px;">All Major Brands Repaired</h3>
+            <img src="images/icon-brands.jpg" alt="" width="48" height="48" style="margin-bottom: 15px; filter: drop-shadow(0 0 8px rgba(255,215,0,0.5));">
+            <h3 style="color: #ffffff; font-size: 1.25rem; font-weight: 800; margin-bottom: 10px;">All Major Brands Repaired</h3>
             <p style="color: #cbd5e1; font-size: 0.95rem; line-height: 1.5; margin-bottom: 20px;">From budget to premium — we service every major AC, fridge, washing machine and TV brand.</p>
           </div>
-          <div style="display: flex; gap: 10px; flex-wrap: wrap;">
-            <a href="#booking" style="flex: 1; background: #2563eb; color: #ffffff; padding: 8px 12px; border-radius: 6px; text-align: center; font-size: 0.85rem; font-weight: 600; text-decoration: none;">Book Now</a>
-            <a href="tel:+919527868342" onclick="return gtag_report_conversion('tel:+919527868342');" style="background: #06b6d4; color: #ffffff; padding: 8px 14px; border-radius: 6px; text-align: center; font-size: 0.85rem; font-weight: 600; text-decoration: none; white-space: nowrap;">📞 Call</a>
+          <div style="display: flex; gap: 10px; flex-wrap: wrap; align-items: center;">
+            <a href="#booking" style="flex: 1; background: linear-gradient(135deg, #bf953f 0%, #fcf6ba 25%, #b38728 50%, #fbf5b7 75%, #aa771c 100%); color: #000000; padding: 10px 14px; border-radius: 25px; text-align: center; font-size: 0.85rem; font-weight: 900; text-decoration: none; box-shadow: 0 0 12px rgba(255,215,0,0.5); text-transform: uppercase;">Book Now</a>
+            <a href="tel:+919527868342" onclick="return gtag_report_conversion('tel:+919527868342');" style="background: linear-gradient(135deg, #0072ff 0%, #00c6ff 100%); color: #ffffff; padding: 10px 16px; border-radius: 25px; text-align: center; font-size: 0.85rem; font-weight: 800; text-decoration: none; white-space: nowrap; box-shadow: 0 0 12px rgba(0, 198, 255, 0.5);">📞 Call</a>
           </div>
         </div>
 
@@ -427,71 +433,82 @@ function gtag_report_conversion(url) {
     </div>
   </section>
 
-  <!-- ===== About / Owner ===== -->
-  <section class="about" id="about">
-    <div class="container about__inner">
-      <div class="about__media" style="text-align: center;">
-        <img src="images/owner-photo.jpg" alt="Portrait placeholder for Shanawaz Mohd Murtuza Shaikh, founder of Air Cool System" width="360" height="360" style="border-radius: 12px; display: block; margin: 0 auto;">
+<!-- ===== About / Owner ===== -->
+  <section class="about" id="about" style="padding: 60px 15px; background: linear-gradient(135deg, #090d16 0%, #111827 100%); border-bottom: 2px solid rgba(255,215,0,0.3);">
+    <div class="container about__inner" style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 40px; align-items: center; justify-content: center;">
+      <div class="about__media" style="text-align: center; flex: 1; min-width: 280px;">
+        <img src="images/owner-photo.jpg" alt="Portrait placeholder for Shanawaz Mohd Murtuza Shaikh, founder of Air Cool System" width="360" height="360" style="border-radius: 15px; display: block; margin: 0 auto; max-width: 100%; height: auto; border: 2px solid #ffd700; box-shadow: 0 0 20px rgba(255, 215, 0, 0.4); background: #111827;">
         
-        <!-- Professional Sky-Blue Call Button under Owner Photo -->
-        <div style="margin-top: 15px;">
-          <a href="tel:+919527868342" onclick="return gtag_report_conversion('tel:+919527868342');" style="display: inline-flex; align-items: center; justify-content: center; gap: 8px; background: linear-gradient(135deg, #0ea5e9 0%, #2563eb 100%); color: #ffffff; padding: 12px 24px; border-radius: 30px; font-size: 1rem; font-weight: 600; text-decoration: none; box-shadow: 0 4px 15px rgba(14, 165, 233, 0.4); transition: transform 0.2s ease;">
-            <span style="font-size: 1.1rem;">📞</span> Call Expert Now
+        <!-- Professional Glowing Call Button under Owner Photo -->
+        <div style="margin-top: 20px;">
+          <a href="tel:+919527868342" onclick="return gtag_report_conversion('tel:+919527868342');" style="display: inline-flex; align-items: center; justify-content: center; gap: 8px; background: linear-gradient(135deg, #00c6ff 0%, #0072ff 100%); color: #ffffff; padding: 12px 26px; border-radius: 30px; font-size: 1.05rem; font-weight: 800; text-decoration: none; box-shadow: 0 0 18px rgba(0, 198, 255, 0.6); border: 1px solid #00c6ff;">
+            <span style="font-size: 1.2rem;">📞</span> Call Expert Now
           </a>
         </div>
       </div>
 
-      <div class="about__content">
-        <span class="eyebrow">Meet the Founder</span>
-        <h2>Shanawaz Mohd Murtuza Shaikh</h2>
-        <p class="about__role">Founder &amp; Lead Technician, Air Cool System</p>
-        <p>Air Cool System was built on a simple idea: appliance repair should be fast, fair, and done right the first time. Shanawaz personally leads a team of hands-on technicians serving Nallasopara East, Vasai and the surrounding Palghar area — fixing ACs, refrigerators, washing machines and TVs with honesty and care.</p>
-        <p>Every job is treated with the same standard, whether it's a quick gas top-up or a full AC installation — because your comfort really is our responsibility.</p>
-        <div style="display: flex; gap: 12px; align-items: center; flex-wrap: wrap;">
-          <a href="https://wa.me/919527868342" target="_blank" rel="noopener" class="btn btn--primary">Message on WhatsApp</a>
-          <span onclick="document.getElementById('privacy-modal').style.display='block'" style="color: #007bff; cursor: pointer; text-decoration: underline; font-size: 14px; font-weight: 500;">Privacy Policy</span>
+      <div class="about__content" style="flex: 1.3; min-width: 280px;">
+        <span class="eyebrow" style="color: #38bdf8; font-weight: 700; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 1px; display: block; margin-bottom: 6px;">Meet the Founder</span>
+        <h2 style="color: #ffffff; font-size: 2.2rem; font-weight: 800; margin-bottom: 5px; text-shadow: 0 0 10px rgba(255,215,0,0.3);">Shanawaz Mohd Murtuza Shaikh</h2>
+        <p class="about__role" style="color: #ffd700; font-weight: 700; font-size: 1.05rem; margin-bottom: 15px; text-shadow: 0 0 6px rgba(255,215,0,0.4);">Founder &amp; Lead Technician, Air Cool System</p>
+        <p style="color: #cbd5e1; font-size: 1.05rem; line-height: 1.6; margin-bottom: 15px;">Air Cool System was built on a simple idea: appliance repair should be fast, fair, and done right the first time. Shanawaz personally leads a team of hands-on technicians serving Nallasopara East, Vasai and the surrounding Palghar area — fixing ACs, refrigerators, washing machines and TVs with honesty and care.</p>
+        <p style="color: #cbd5e1; font-size: 1.05rem; line-height: 1.6; margin-bottom: 22px;">Every job is treated with the same standard, whether it's a quick gas top-up or a full AC installation — because your comfort really is our responsibility.</p>
+        <div style="display: flex; gap: 15px; align-items: center; flex-wrap: wrap;">
+          <a href="https://wa.me/919527868342" target="_blank" rel="noopener" class="btn btn--primary" style="background: linear-gradient(135deg, #25d366 0%, #128c7e 100%); color: #ffffff; padding: 12px 24px; border-radius: 30px; font-weight: 800; text-decoration: none; box-shadow: 0 0 18px rgba(37, 211, 102, 0.6); text-transform: uppercase;">Message on WhatsApp</a>
+          <span onclick="document.getElementById('privacy-modal').style.display='block'" style="color: #38bdf8; cursor: pointer; text-decoration: underline; font-size: 15px; font-weight: 700;">Privacy Policy</span>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Privacy Policy Popup Box (Placed safely outside layout) -->
-  <div id="privacy-modal" style="display:none; position:fixed; z-index:9999; left:0; top:0; width:100%; height:100%; background-color:rgba(0,0,0,0.5);">
-    <div style="background:#fff; margin:15% auto; padding:20px; width:90%; max-width:450px; border-radius:8px; position:relative;">
-      <span onclick="document.getElementById('privacy-modal').style.display='none'" style="float:right; cursor:pointer; font-size:24px; font-weight:bold;">&times;</span>
-      <h3 style="margin-bottom: 10px;">Privacy Policy</h3>
-      <p style="font-size: 13px; line-height: 1.5; color: #445;">
+  <div id="privacy-modal" style="display:none; position:fixed; z-index:9999; left:0; top:0; width:100%; height:100%; background-color:rgba(0,0,0,0.8); backdrop-filter: blur(5px);">
+    <div style="background:#111827; margin:15% auto; padding:25px; width:90%; max-width:450px; border-radius:12px; position:relative; border: 1.5px solid #ffd700; box-shadow: 0 0 25px rgba(255,215,0,0.3);">
+      <span onclick="document.getElementById('privacy-modal').style.display='none'" style="float:right; cursor:pointer; font-size:26px; font-weight:bold; color: #ffd700;">&times;</span>
+      <h3 style="margin-bottom: 12px; color: #ffd700; font-size: 1.3rem;">Privacy Policy</h3>
+      <p style="font-size: 14px; line-height: 1.6; color: #cbd5e1;">
         Air Cool System collects your name, phone number, and service details strictly to provide appliance repair and maintenance services across Nallasopara, Vasai, and Virar. Your data is secure, never shared with third parties, and used only to manage your service appointments.
       </p>
     </div>
   </div>
 
   <!-- ===== Contact ===== -->
-  <section class="contact" id="contact">
-    <div class="container">
-      <div class="section-head section-head--light">
-        <span class="eyebrow eyebrow--light">Get In Touch</span>
-        <h2>Contact Air Cool System</h2>
+  <section class="contact" id="contact" style="padding: 60px 15px; background: #090d16;">
+    <div class="container" style="max-width: 1200px; margin: 0 auto;">
+      <div class="section-head section-head--light" style="text-align: center; margin-bottom: 40px;">
+        <span class="eyebrow eyebrow--light" style="color: #38bdf8; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; font-size: 0.95rem;">Get In Touch</span>
+        <h2 style="color: #ffffff; font-size: 2.2rem; font-weight: 800; margin-top: 6px; text-shadow: 0 0 10px rgba(255,255,255,0.2);">Contact Air Cool System</h2>
       </div>
 
-      <div class="contact__grid">
-        <div class="contact-card">
-          <h3>📍 Address</h3>
-          <p>Room No. 02, Maa Sharda Apartment,<br>
+      <div class="contact__grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 22px;">
+        
+        <!-- Address Card -->
+        <div class="contact-card" style="background: #111827; border: 1.5px solid rgba(255,215,0,0.4); padding: 25px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.5);">
+          <h3 style="color: #ffd700; font-size: 1.2rem; font-weight: 800; margin-bottom: 12px; text-shadow: 0 0 6px rgba(255,215,0,0.4);">📍 Address</h3>
+          <p style="color: #cbd5e1; font-size: 0.95rem; line-height: 1.6;">Room No. 02, Maa Sharda Apartment,<br>
           90 Feet Road, Pragati Nagar, Moregaon,<br>
           Nallasopara Vasai, Vasai, Palghar,<br>
           Maharashtra – 401209</p>
         </div>
-        <div class="contact-card">
-          <h3>📞 Call / WhatsApp</h3>
-          <p><a href="tel:+919527868342" onclick="return gtag_report_conversion('tel:+919527868342');">+91 95278 68342</a></p>
-          <a href="https://wa.me/919527868342" target="_blank" rel="noopener" class="btn btn--accent btn--sm">Chat on WhatsApp</a>
+
+        <!-- Phone Card -->
+        <div class="contact-card" style="background: #111827; border: 1.5px solid rgba(255,215,0,0.4); padding: 25px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.5); display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <h3 style="color: #ffd700; font-size: 1.2rem; font-weight: 800; margin-bottom: 12px; text-shadow: 0 0 6px rgba(255,215,0,0.4);">📞 Call / WhatsApp</h3>
+            <p style="margin-bottom: 15px;"><a href="tel:+919527868342" onclick="return gtag_report_conversion('tel:+919527868342');" style="color: #ffffff; font-size: 1.2rem; font-weight: 800; text-decoration: none; text-shadow: 0 0 8px rgba(255,215,0,0.5);">+91 95278 68342</a></p>
+          </div>
+          <div>
+            <a href="https://wa.me/919527868342" target="_blank" rel="noopener" class="btn btn--accent btn--sm" style="display: inline-block; background: linear-gradient(135deg, #25d366 0%, #128c7e 100%); color: #ffffff; padding: 10px 20px; border-radius: 25px; font-weight: 800; text-decoration: none; box-shadow: 0 0 15px rgba(37, 211, 102, 0.5); text-transform: uppercase; font-size: 0.85rem;">Chat on WhatsApp</a>
+          </div>
         </div>
-        <div class="contact-card">
-          <h3>🕒 Working Hours</h3>
-          <p>Regular Service: 7:00 AM – 12:00 PM<br>
-          Emergency Calls: Open 24/7</p>
+
+        <!-- Working Hours Card -->
+        <div class="contact-card" style="background: #111827; border: 1.5px solid rgba(255,215,0,0.4); padding: 25px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.5);">
+          <h3 style="color: #ffd700; font-size: 1.2rem; font-weight: 800; margin-bottom: 12px; text-shadow: 0 0 6px rgba(255,215,0,0.4);">🕒 Working Hours</h3>
+          <p style="color: #cbd5e1; font-size: 0.95rem; line-height: 1.6;">Regular Service: <strong style="color: #fff;">7:00 AM – 12:00 PM</strong><br>
+          Emergency Calls: <strong style="color: #00ff66; text-shadow: 0 0 6px #00ff66;">Open 24/7</strong></p>
         </div>
+
       </div>
     </div>
   </section>
@@ -499,64 +516,64 @@ function gtag_report_conversion(url) {
 </main>
 
 <!-- ===== Footer ===== -->
-<footer class="footer" style="background: radial-gradient(circle at top, #1e293b 0%, #0f172a 60%, #020617 100%); color: #94a3b8; padding: 70px 0 25px 0; font-size: 0.95rem; border-top: 2px solid rgba(56, 189, 248, 0.3); position: relative; overflow: hidden;">
-  <div class="container footer__inner" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 35px; margin-bottom: 45px; position: relative; z-index: 1;">
+<footer class="footer" style="background: radial-gradient(circle at top, #1e293b 0%, #0f172a 60%, #020617 100%); color: #94a3b8; padding: 70px 0 25px 0; font-size: 0.95rem; border-top: 2px solid #ffd700; position: relative; overflow: hidden; box-shadow: inset 0 10px 20px rgba(0,0,0,0.5);">
+  <div class="container footer__inner" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 35px; margin-bottom: 45px; position: relative; z-index: 1; max-width: 1200px; margin-left: auto; margin-right: auto; padding: 0 15px;">
     
     <div class="footer__brand">
       <a href="#top" class="brand brand--footer" style="display: flex; align-items: center; gap: 12px; text-decoration: none; margin-bottom: 18px;">
-        <img src="images/logo.jpg" alt="Air Cool System logo" width="44" height="44" style="border-radius: 10px; box-shadow: 0 4px 12px rgba(56, 189, 248, 0.3);">
+        <img src="images/logo.jpg" alt="Air Cool System logo" width="44" height="44" style="border-radius: 50%; border: 2px solid #ffd700; box-shadow: 0 0 12px rgba(255, 215, 0, 0.5);">
         <span class="brand__text" style="display: flex; flex-direction: column;">
-          <strong style="color: #ffffff; font-size: 1.2rem; letter-spacing: 0.5px;">Air Cool System</strong>
-          <small style="color: #38bdf8; font-size: 0.85rem; font-weight: 600;">Cooling &amp; Appliance Care</small>
+          <strong style="color: #ffffff; font-size: 1.25rem; letter-spacing: 0.5px; text-shadow: 0 0 8px rgba(255,215,0,0.6);">Air Cool System</strong>
+          <small style="color: #ffd700; font-size: 0.85rem; font-weight: 700;">Cooling &amp; Appliance Care</small>
         </span>
       </a>
-      <p style="margin-bottom: 12px; color: #e2e8f0; font-weight: 500; line-height: 1.5;">Your Comfort, Our Responsibility | Thandi Hawa, Behtar Zindagi!</p>
+      <p style="margin-bottom: 12px; color: #ffffff; font-weight: 700; line-height: 1.5; text-shadow: 0 0 6px rgba(255,215,0,0.4);">Your Comfort, Our Responsibility | Thandi Hawa, Behtar Zindagi!</p>
       <p style="margin-bottom: 10px; font-size: 0.88rem; line-height: 1.6; color: #cbd5e1;">Service Coverage Area: Nallasopara East, Nallasopara West, Virar East, Virar West, Vasai East, Vasai West, Palghar – 401209</p>
-      <p style="font-size: 0.88rem; color: #38bdf8; font-weight: 500;">Business Name: Air Cool System | Proprietor: Shanawaz Mohd Murtuza Shaikh</p>
+      <p style="font-size: 0.88rem; color: #38bdf8; font-weight: 700;">Business Name: Air Cool System | Proprietor: Shanawaz Mohd Murtuza Shaikh</p>
     </div>
 
     <div class="footer__col" style="display: flex; flex-direction: column; gap: 12px;">
-      <h4 style="color: #ffffff; font-size: 1.1rem; margin-bottom: 5px; border-bottom: 2px solid #38bdf8; display: inline-block; padding-bottom: 6px; width: fit-content;">Quick Links</h4>
-      <a href="#booking" style="color: #94a3b8; text-decoration: none; transition: all 0.3s ease;" onmouseover="this.style.color='#38bdf8'; this.style.paddingLeft='5px';" onmouseout="this.style.color='#94a3b8'; this.style.paddingLeft='0';">⚡ Book Now</a>
-      <a href="#services" style="color: #94a3b8; text-decoration: none; transition: all 0.3s ease;" onmouseover="this.style.color='#38bdf8'; this.style.paddingLeft='5px';" onmouseout="this.style.color='#94a3b8'; this.style.paddingLeft='0';">🔧 Services</a>
-      <a href="#why-us" style="color: #94a3b8; text-decoration: none; transition: all 0.3s ease;" onmouseover="this.style.color='#38bdf8'; this.style.paddingLeft='5px';" onmouseout="this.style.color='#94a3b8'; this.style.paddingLeft='0';">⭐ Why Us</a>
-      <a href="#about" style="color: #94a3b8; text-decoration: none; transition: all 0.3s ease;" onmouseover="this.style.color='#38bdf8'; this.style.paddingLeft='5px';" onmouseout="this.style.color='#94a3b8'; this.style.paddingLeft='0';">👤 About</a>
-      <a href="#contact" style="color: #94a3b8; text-decoration: none; transition: all 0.3s ease;" onmouseover="this.style.color='#38bdf8'; this.style.paddingLeft='5px';" onmouseout="this.style.color='#94a3b8'; this.style.paddingLeft='0';">📞 Contact</a>
+      <h4 style="color: #ffffff; font-size: 1.15rem; font-weight: 800; margin-bottom: 5px; border-bottom: 2px solid #ffd700; display: inline-block; padding-bottom: 6px; width: fit-content; text-shadow: 0 0 6px rgba(255,215,0,0.4);">Quick Links</h4>
+      <a href="#booking" style="color: #cbd5e1; text-decoration: none; font-weight: 600; transition: all 0.3s ease;" onmouseover="this.style.color='#ffd700'; this.style.paddingLeft='5px';" onmouseout="this.style.color='#cbd5e1'; this.style.paddingLeft='0';">⚡ Book Now</a>
+      <a href="#services" style="color: #cbd5e1; text-decoration: none; font-weight: 600; transition: all 0.3s ease;" onmouseover="this.style.color='#ffd700'; this.style.paddingLeft='5px';" onmouseout="this.style.color='#cbd5e1'; this.style.paddingLeft='0';">🔧 Services</a>
+      <a href="#why-us" style="color: #cbd5e1; text-decoration: none; font-weight: 600; transition: all 0.3s ease;" onmouseover="this.style.color='#ffd700'; this.style.paddingLeft='5px';" onmouseout="this.style.color='#cbd5e1'; this.style.paddingLeft='0';">⭐ Why Us</a>
+      <a href="#about" style="color: #cbd5e1; text-decoration: none; font-weight: 600; transition: all 0.3s ease;" onmouseover="this.style.color='#ffd700'; this.style.paddingLeft='5px';" onmouseout="this.style.color='#cbd5e1'; this.style.paddingLeft='0';">👤 About</a>
+      <a href="#contact" style="color: #cbd5e1; text-decoration: none; font-weight: 600; transition: all 0.3s ease;" onmouseover="this.style.color='#ffd700'; this.style.paddingLeft='5px';" onmouseout="this.style.color='#cbd5e1'; this.style.paddingLeft='0';">📞 Contact</a>
     </div>
 
     <div class="footer__col" style="display: flex; flex-direction: column; gap: 12px;">
-      <h4 style="color: #ffffff; font-size: 1.1rem; margin-bottom: 5px; border-bottom: 2px solid #38bdf8; display: inline-block; padding-bottom: 6px; width: fit-content;">Services</h4>
-      <a href="#services" style="color: #94a3b8; text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#94a3b8'">AC Repair &amp; Service</a>
-      <a href="#services" style="color: #94a3b8; text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#94a3b8'">AC Piping &amp; Installation</a>
-      <a href="#services" style="color: #94a3b8; text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#94a3b8'">Refrigerator Repair</a>
-      <a href="#services" style="color: #94a3b8; text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#94a3b8'">Washing Machine Repair</a>
-      <a href="#services" style="color: #94a3b8; text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#94a3b8'">TV Repair</a>
+      <h4 style="color: #ffffff; font-size: 1.15rem; font-weight: 800; margin-bottom: 5px; border-bottom: 2px solid #ffd700; display: inline-block; padding-bottom: 6px; width: fit-content; text-shadow: 0 0 6px rgba(255,215,0,0.4);">Services</h4>
+      <a href="#services" style="color: #cbd5e1; font-weight: 600; text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='#ffd700'" onmouseout="this.style.color='#cbd5e1'">AC Repair &amp; Service</a>
+      <a href="#services" style="color: #cbd5e1; font-weight: 600; text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='#ffd700'" onmouseout="this.style.color='#cbd5e1'">AC Piping &amp; Installation</a>
+      <a href="#services" style="color: #cbd5e1; font-weight: 600; text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='#ffd700'" onmouseout="this.style.color='#cbd5e1'">Refrigerator Repair</a>
+      <a href="#services" style="color: #cbd5e1; font-weight: 600; text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='#ffd700'" onmouseout="this.style.color='#cbd5e1'">Washing Machine Repair</a>
+      <a href="#services" style="color: #cbd5e1; font-weight: 600; text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='#ffd700'" onmouseout="this.style.color='#cbd5e1'">TV Repair</a>
     </div>
 
     <div class="footer__col" style="display: flex; flex-direction: column; gap: 12px;">
-      <h4 style="color: #ffffff; font-size: 1.1rem; margin-bottom: 5px; border-bottom: 2px solid #38bdf8; display: inline-block; padding-bottom: 6px; width: fit-content;">Contact</h4>
-      <a href="tel:+919527868342" onclick="return gtag_report_conversion('tel:+919527868342');" style="color: #38bdf8; font-weight: 700; font-size: 1.05rem; text-decoration: none;">📞 +91 95278 68342</a>
-      <a href="https://wa.me/919527868342" target="_blank" rel="noopener" style="color: #22c55e; font-weight: 700; text-decoration: none;">💬 WhatsApp Us</a>
-      <span style="font-size: 0.88rem; line-height: 1.6; color: #94a3b8; background: rgba(255, 255, 255, 0.03); padding: 10px; border-radius: 8px; border: 1px solid rgba(255, 255, 255, 0.05);">Trusted, Genuine &amp; Expert Home Appliance Repair Service<br>Email: aircoolservicecenter@gmail.com</span>
+      <h4 style="color: #ffffff; font-size: 1.15rem; font-weight: 800; margin-bottom: 5px; border-bottom: 2px solid #ffd700; display: inline-block; padding-bottom: 6px; width: fit-content; text-shadow: 0 0 6px rgba(255,215,0,0.4);">Contact</h4>
+      <a href="tel:+919527868342" onclick="return gtag_report_conversion('tel:+919527868342');" style="color: #ffd700; font-weight: 800; font-size: 1.1rem; text-decoration: none; text-shadow: 0 0 8px rgba(255,215,0,0.5);">📞 +91 95278 68342</a>
+      <a href="https://wa.me/919527868342" target="_blank" rel="noopener" style="color: #22c55e; font-weight: 800; text-decoration: none; text-shadow: 0 0 8px rgba(34,197,94,0.5);">💬 WhatsApp Us</a>
+      <span style="font-size: 0.88rem; line-height: 1.6; color: #cbd5e1; background: rgba(255, 255, 255, 0.04); padding: 12px; border-radius: 8px; border: 1px solid rgba(255, 215, 0, 0.2);">Trusted, Genuine &amp; Expert Home Appliance Repair Service<br><strong style="color: #38bdf8;">Email:</strong> aircoolservicecenter@gmail.com</span>
     </div>
 
   </div>
    
-  <div class="footer__bottom" style="border-top: 1px solid rgba(255, 255, 255, 0.08); padding-top: 25px; text-align: center; position: relative; z-index: 1;">
-    <div class="container footer__bottom-inner" style="display: flex; flex-direction: column; gap: 6px; align-items: center; justify-content: center;">
-      <p style="font-size: 0.92rem; color: #e2e8f0; font-weight: 500;">© <span id="year"></span> Air Cool System. All rights reserved.</p>
-      <p style="font-size: 0.85rem; color: #64748b;">Owned &amp; operated by Shanawaz Mohd Murtuza Shaikh</p>
+  <div class="footer__bottom" style="border-top: 1px solid rgba(255, 215, 0, 0.2); padding-top: 25px; text-align: center; position: relative; z-index: 1;">
+    <div class="container footer__bottom-inner" style="display: flex; flex-direction: column; gap: 6px; align-items: center; justify-content: center; max-width: 1200px; margin: 0 auto; padding: 0 15px;">
+      <p style="font-size: 0.95rem; color: #ffffff; font-weight: 600;">© <span id="year"></span> Air Cool System. All rights reserved.</p>
+      <p style="font-size: 0.88rem; color: #ffd700; font-weight: 600; text-shadow: 0 0 6px rgba(255,215,0,0.4);">Owned &amp; operated by Shanawaz Mohd Murtuza Shaikh</p>
     </div>
   </div>
 </footer>
 
-<!-- ===== Floating action buttons ===== -->
-<div class="fab-group" aria-hidden="false">
-  <a href="https://wa.me/919527868342" target="_blank" rel="noopener" class="fab fab--whatsapp" aria-label="Chat on WhatsApp">
-    <svg viewBox="0 0 32 32" width="26" height="26"><path fill="#fff" d="M16 3C9 3 3.3 8.7 3.3 15.7c0 2.5.7 4.8 1.9 6.8L3 29l6.7-2.1c1.9 1.1 4.1 1.7 6.3 1.7 7 0 12.7-5.7 12.7-12.7C28.7 8.7 23 3 16 3zm0 23.1c-2 0-3.9-.5-5.6-1.5l-.4-.2-4 1.2 1.2-3.9-.3-.4c-1.1-1.8-1.7-3.8-1.7-5.9C5.2 9.8 10 5 16 5s10.8 4.8 10.8 10.7S22 26.1 16 26.1zm5.9-8c-.3-.2-1.9-.9-2.2-1.1-.3-.1-.5-.2-.7.2s-.8 1.1-1 1.3c-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-2-1.8-2.3-.2-.3 0-.5.1-.7.1-.1.3-.4.5-.5.2-.2.2-.3.3-.5.1-.2 0-.4 0-.6s-.7-1.7-1-2.3c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1.1 2.8 1.2 3c.1.2 2.1 3.3 5.2 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.9-.8 2.1-1.5.3-.7.3-1.4.2-1.5-.1-.1-.3-.2-.6-.4z"/></svg>
+<!-- ===== Floating action buttons (Glowing & Attractive) ===== -->
+<div class="fab-group" aria-hidden="false" style="position: fixed; bottom: 25px; right: 25px; display: flex; flex-direction: column; gap: 15px; z-index: 9999;">
+  <a href="https://wa.me/919527868342" target="_blank" rel="noopener" class="fab fab--whatsapp" aria-label="Chat on WhatsApp" style="background: linear-gradient(135deg, #25d366 0%, #128c7e 100%); width: 52px; height: 52px; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 20px rgba(37, 211, 102, 0.7); border: 2px solid #ffffff; transition: transform 0.3s ease;">
+    <svg viewBox="0 0 32 32" width="28" height="28"><path fill="#fff" d="M16 3C9 3 3.3 8.7 3.3 15.7c0 2.5.7 4.8 1.9 6.8L3 29l6.7-2.1c1.9 1.1 4.1 1.7 6.3 1.7 7 0 12.7-5.7 12.7-12.7C28.7 8.7 23 3 16 3zm0 23.1c-2 0-3.9-.5-5.6-1.5l-.4-.2-4 1.2 1.2-3.9-.3-.4c-1.1-1.8-1.7-3.8-1.7-5.9C5.2 9.8 10 5 16 5s10.8 4.8 10.8 10.7S22 26.1 16 26.1zm5.9-8c-.3-.2-1.9-.9-2.2-1.1-.3-.1-.5-.2-.7.2s-.8 1.1-1 1.3c-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-2-1.8-2.3-.2-.3 0-.5.1-.7.1-.1.3-.4.5-.5.2-.2.2-.3.3-.5.1-.2 0-.4 0-.6s-.7-1.7-1-2.3c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1.1 2.8 1.2 3c.1.2 2.1 3.3 5.2 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.9-.8 2.1-1.5.3-.7.3-1.4.2-1.5-.1-.1-.3-.2-.6-.4z"/></svg>
   </a>
-  <a href="tel:+919527868342" class="fab fab--call" aria-label="Call Air Cool System" onclick="return gtag_report_conversion('tel:+919527868342');">
-    <svg viewBox="0 0 24 24" width="22" height="22"><path fill="#fff" d="M6.6 10.8c1.4 2.8 3.7 5 6.5 6.5l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.5.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.5.1.4 0 .8-.2 1L6.6 10.8z"/></svg>
+  <a href="tel:+919527868342" class="fab fab--call" aria-label="Call Air Cool System" onclick="return gtag_report_conversion('tel:+919527868342');" style="background: linear-gradient(135deg, #00c6ff 0%, #0072ff 100%); width: 52px; height: 52px; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 20px rgba(0, 198, 255, 0.7); border: 2px solid #ffffff; transition: transform 0.3s ease;">
+    <svg viewBox="0 0 24 24" width="24" height="24"><path fill="#fff" d="M6.6 10.8c1.4 2.8 3.7 5 6.5 6.5l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.5.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.5.1.4 0 .8-.2 1L6.6 10.8z"/></svg>
   </a>
 </div>
 
