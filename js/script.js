@@ -1,97 +1,90 @@
 (function () {
   "use strict";
+  var y = document.getElementById("year");
+  if (y) y.textContent = new Date().getFullYear();
 
-  var WHATSAPP_NUMBER = "919527868342";
-
-  /* ---- Footer year ---- */
-  var yearEl = document.getElementById("year");
-  if (yearEl) yearEl.textContent = new Date().getFullYear();
-
-  /* ---- Mobile nav toggle ---- */
-  var hamburger = document.getElementById("hamburger");
-  var nav = document.getElementById("mainNav");
-
-  function closeNav() {
-    nav.classList.remove("is-open");
-    hamburger.classList.remove("is-open");
-    hamburger.setAttribute("aria-expanded", "false");
-  }
-
-  if (hamburger && nav) {
-    hamburger.addEventListener("click", function () {
-      var isOpen = nav.classList.toggle("is-open");
-      hamburger.classList.toggle("is-open", isOpen);
-      hamburger.setAttribute("aria-expanded", String(isOpen));
-    });
-
-    nav.querySelectorAll("a").forEach(function (link) {
-      link.addEventListener("click", closeNav);
-    });
-
-    document.addEventListener("keydown", function (e) {
-      if (e.key === "Escape") closeNav();
+  /* mobile nav */
+  var hb = document.getElementById("hamburger"),
+    nav = document.getElementById("mainNav");
+  if (hb && nav) {
+    hb.addEventListener("click", function () {
+      var o = nav.classList.toggle("is-open");
+      hb.setAttribute("aria-expanded", String(o));
     });
   }
-
-  /* ---- Sticky header shadow on scroll ---- */
-  var header = document.querySelector(".header");
-  if (header) {
-    var toggleShadow = function () {
-      if (window.scrollY > 8) {
-        header.style.boxShadow = "0 4px 18px rgba(10,46,82,0.08)";
-      } else {
-        header.style.boxShadow = "none";
+  /* dropdown (tap on mobile) */
+  var dd = document.querySelector(".dd");
+  if (dd) {
+    dd.querySelector("a").addEventListener("click", function (e) {
+      if (window.innerWidth <= 1020) {
+        e.preventDefault();
+        dd.classList.toggle("open");
       }
-    };
-    window.addEventListener("scroll", toggleShadow, { passive: true });
-    toggleShadow();
+    });
+  }
+  /* privacy modal */
+  var m = document.getElementById("privacy-modal");
+  document.querySelectorAll("[data-privacy]").forEach(function (b) {
+    b.addEventListener("click", function () {
+      m.classList.add("show");
+    });
+  });
+  if (m)
+    m.addEventListener("click", function (e) {
+      if (e.target === m || e.target.classList.contains("x")) m.classList.remove("show");
+    });
+
+  /* phone field: digits only, also handles pasted +91 numbers */
+  var ph = document.getElementById("phone");
+  if (ph) {
+    ph.addEventListener("input", function () {
+      ph.value = ph.value.replace(/\D/g, "").slice(0, 10);
+    });
+    ph.addEventListener("paste", function (e) {
+      var t = (e.clipboardData || window.clipboardData).getData("text") || "";
+      var d = t.replace(/\D/g, "");
+      if (d.length > 10) d = d.slice(-10);
+      e.preventDefault();
+      ph.value = d;
+    });
   }
 
-  /* ---- Quick Booking form -> Web3Forms & Thank You Page Handoff ---- */
+  /* booking form -> Web3Forms -> thank you page */
   var form = document.getElementById("bookingForm");
-  var submitBtn = form ? form.querySelector('button[type="submit"]') : null;
-
   if (form) {
+    var btn = form.querySelector('button[type="submit"]');
     form.addEventListener("submit", async function (e) {
       e.preventDefault();
-
       if (!form.checkValidity()) {
         form.reportValidity();
         return;
       }
-
-      var originalText = submitBtn ? submitBtn.textContent : "";
-      if (submitBtn) {
-        submitBtn.textContent = "Submitting...";
-        submitBtn.disabled = true;
-      }
-
-      var formData = new FormData(form);
-
+      var t = btn.textContent;
+      btn.textContent = "Submitting...";
+      btn.disabled = true;
       try {
-        var response = await fetch("https://api.web3forms.com/submit", {
+        var r = await fetch("https://api.web3forms.com/submit", {
           method: "POST",
-          body: formData
+          body: new FormData(form),
         });
-
-        var data = await response.json();
-
-        if (response.ok) {
-          // Redirect directly to the thank you page
+        var d = await r.json();
+        if (r.ok) {
           window.location.href = "thankyou.html";
         } else {
-          alert("Error: " + (data.message || "Something went wrong"));
-          if (submitBtn) {
-            submitBtn.textContent = originalText;
-            submitBtn.disabled = false;
-          }
+          alert(
+            "Booking could not be sent: " +
+              (d.message || "Something went wrong") +
+              ". Please try again or call us.",
+          );
+          btn.textContent = t;
+          btn.disabled = false;
         }
-      } catch (error) {
-        alert("Something went wrong. Please try again.");
-        if (submitBtn) {
-          submitBtn.textContent = originalText;
-          submitBtn.disabled = false;
-        }
+      } catch (err) {
+        alert(
+          "Could not send your booking. Please check your internet and try again, or call us directly.",
+        );
+        btn.textContent = t;
+        btn.disabled = false;
       }
     });
   }
